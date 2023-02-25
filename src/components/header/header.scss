@@ -1,0 +1,39 @@
+.header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background: rgb(60, 60, 60);
+
+    .header_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        & > a {
+            padding: 1rem 4rem;
+            background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
+        }
+    
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 114px;
+        
+            li {
+                margin-left: 4rem;
+                a {
+                    color: #F1F1F1;
+                  
+                    &:hover {
+                      text-decoration: underline;
+                      background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                  }
+              }
+          }
+      }
+  }

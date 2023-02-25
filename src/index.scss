@@ -1,0 +1,121 @@
+$base-font-size: 16px; // set the base font size to 16 pixels
+
+@font-face {
+  font-family: 'Mona-Sans';
+  src: url('/typography/Mona-Sans.woff2') format('woff2'),
+       url('/typography/Mona-Sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Light';
+  src: url('/typography/Mona-Sans-Light.woff2') format('woff2'),
+       url('/typography/Mona-Sans-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona-Sans-LightWide';
+  src: url('/typography/Mona-Sans-LightWide.woff2') format('woff2'),
+       url('/typography/Mona-Sans-LightWide.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona-Sans-MediumWide';
+  src: url('/typography/Mona-Sans-MediumWide.woff2') format('woff2'),
+       url('/typography/Mona-Sans-MediumWide.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mona-Sans-BoldWide';
+  src: url('/typography/Mona-Sans-BoldWide.woff2') format('woff2'),
+       url('/typography/Mona-Sans-BoldWide.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: $base-font-size;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Mona-Sans', sans-serif;
+  background: #020204;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Mona-Sans-BoldWide';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 122.9%;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Mona-Sans-BoldWide';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-family: 'Mona-Sans-MediumWide';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+
+}
+
+a, input {
+  font-family: 'Mona-Sans-LightWide';
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Mona-Sans-Light';
+  font-style: lighter;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.02em;
+}
+
+ul,li,input,button {
+  all: initial;
+}
+
+// input {
+//   all: initial;
+// }

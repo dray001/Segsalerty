@@ -1,0 +1,132 @@
+$hpv: 80px; // horizontal Padding Value
+// $vpv: 124px; // vertical Padding Value for sections
+
+header, footer {
+    padding: 42px $hpv;
+}
+
+.headerWrapper {
+    // position: fixed;
+    width: 100%; 
+}
+
+form {
+  
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+      background: #020204;
+      border: 1px solid #18181B;
+      color: #71717A;
+      padding: 1rem 4rem 1rem 1rem;
+
+      &[type="text"] {
+        color: #A5ACAF;
+      }
+
+    }
+
+    button {
+      background: #217960;
+      color: #FFFFFF;
+      padding: 1rem 1.5rem;
+    }
+
+  }
+
+main {
+
+    section {
+        padding: 0 $hpv;
+        // background: rgb(26, 26, 26);
+        // height: calc(100vh - 132px);
+        height: 100vh;
+
+        .sectionLabel {
+            width: 100%;
+            // display: none;
+            background: #0C0D10;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 78px;
+        }
+
+        .contentWrapper {
+            max-width: 60%;
+
+            h1,h4 {
+                margin-bottom: 2rem;
+            }
+
+            p {
+                margin-bottom: 3rem;
+            }
+
+            .ctaWrapper {
+                display: flex;
+
+                a.primaryButton {
+                  padding: 1rem 2rem;
+                  background: #217960;
+                  color: #fff;
+                  margin-right: 1.5rem;
+    
+                  svg {
+                    margin-left: 12px;
+                  }
+              }
+    
+              a.secondaryButton {
+                  padding: 1rem 2rem;
+                  background: #0C0D10;
+                  border: 1px solid #217960;
+                  color: #fff;
+              }
+            } 
+        } 
+    }
+
+    .section_flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+    .section_with_subSections {
+        height: unset;
+        padding: 0;
+
+        & > .should_Flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60vh;
+            padding: 0 $hpv;
+            // padding: 0 80px;
+            margin-top: 108px;
+
+            .contentWrapper {
+                width: 45%;
+            }
+
+            .imageWrapper {
+                padding: 0;
+                // something generic could be here
+            }
+
+        }
+
+        & > .should_stack {
+          margin-top: 108px;
+          padding: 0 $hpv;
+        }
+
+    }
+}
