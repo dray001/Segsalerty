@@ -1,0 +1,16 @@
+.becomeParticipant_Section {
+    height: 80vh;
+    padding: 0;
+    margin: 150px 0 0 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/STS_Page/becomeParticipant.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .contentWrapper {
+        padding: 0 0 80px 80px;
+    }
+}

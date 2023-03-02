@@ -1,5 +1,8 @@
 import './sts_page.scss'
 
+import FooterBanner from '../../components/footerBanner/FooterBanner'
+import Faq from '../../components/faq/Faq'
+
 import sts_heroImg from '../../images/STS_Page/sts_heroImg.png'
 
 import DSL_Discover from '../../images/STS_Page/DSL_Discover.png'
@@ -287,6 +290,10 @@ const STS_Page = () => {
 
 
           </section>
+
+          <Faq />
+          <FooterBanner />
+
         </div> 
   );
 }

@@ -147,6 +147,43 @@
         }
     }
 
+    .faq_Section {
+        text-align: center;
+        display: block;
 
-    
+        .contentWrapper {
+            margin: auto;
+        }
+
+        .questionsWrapper {
+            max-width: 70%;
+            margin: auto;
+
+            .question {
+                background: #0C0D10;
+                border-radius: 16px;
+                padding: 16px;
+                display: flex;
+                cursor: pointer;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 32px;
+
+                p {
+                    font-size: 18px;
+                    color: #FFFFFF;
+                }
+
+                span {
+                    width: 48px;
+                    height: 48px;
+                    background: #000000;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }   
 }
