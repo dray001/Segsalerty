@@ -1,0 +1,133 @@
+.aboutUsWrapper {
+    
+    .client_Section {
+        height: 86vh;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        .contentWrapper {
+            padding: 0 0 40px 80px;
+
+            & > p {
+                margin-bottom: 24px;
+            }
+        }
+
+    }
+
+    .aboutUs_Section {
+        height: auto;
+        background: #F1F1F1;
+        color: #000;
+        padding: 104px 80px;
+
+        & > div {
+            // margin: 80px 92px;
+
+            .titleSlash {
+                display: flex;
+                align-items: center;
+            
+                span {
+                    content: '';
+                    top: 50%;
+                    height: 2px;
+                    width: 100%;
+                    background: #000;
+                }
+
+                h4 {
+                    min-width: 264px;
+                    padding-right: 20px;
+                }
+
+            }
+
+            .contentWrapper {
+            margin-left: auto;
+            margin-top: 32px;
+
+                h5 {
+                    font-size: 24px;
+                    line-height: 140%;
+                }
+
+                p {
+                    color: #000;
+                }
+                
+                a.secondaryButton {
+                    background: #E4E4E7;
+                    color: #020204;
+                }
+            } 
+        }
+
+        & > div:last-child {
+            margin-top: 132px;
+
+            .titleSlash {
+
+                span {
+                    width: 100%;
+                }
+
+                h4 {
+                    min-width: 414px;
+                }
+
+            }
+        }    
+    }
+
+    .whatWeDoSection {
+        .listingWrapper {
+            & > div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 32px;
+
+                svg {
+                    background: #0C0D10;
+                    border: 1px solid #231F20;
+                    padding: 8px;
+                    margin-right: 12px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .vision {
+            flex-direction: row-reverse;
+            // justify-content: unset;
+            // align-items: unset;
+
+            .contentWrapper {
+                width: 48%;
+
+                .value {
+
+                    .listingWrapper {
+                        display: flex;
+                        margin-top: 24px;
+    
+                        & > div {
+                            margin-right: 24px;
+                        }
+                    }
+                }
+            }
+        }
+      
+   }
+}

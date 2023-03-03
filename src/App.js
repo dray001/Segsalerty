@@ -6,6 +6,7 @@ import HomePage from "./pages/landingPage/HomePage";
 import STS_Page from "./pages/STS_Page/STS_Page";
 import Events from './pages/events_Page/Events'
 import HireUs from './pages/hireUs_Page/HireUs_Page'
+import AboutUs from './pages/aboutUs_Page/AboutUs_Page'
 import './App.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/sts" element={<STS_Page />} />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/hireUs" element={<HireUs />} />
+          <Route exact path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </main>
 

@@ -114,8 +114,6 @@ main {
         height: unset;
         padding: 0;
 
-
-
         & > .should_Flex {
             display: flex;
             justify-content: space-between;
@@ -131,6 +129,10 @@ main {
 
             .imageWrapper {
                 padding: 0;
+                img {
+
+                  width: 100%;
+                }
                 // something generic could be here
             }
 
@@ -144,6 +146,5 @@ main {
         & > .should_grid {
             padding: 0 $hpv;
         }
-
     }
 }
