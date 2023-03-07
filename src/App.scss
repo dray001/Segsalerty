@@ -1,8 +1,13 @@
 $hpv: 80px; // horizontal Padding Value
+$hpvMobile: 24px; // horizontal Padding Value Mobile
 // $vpv: 124px; // vertical Padding Value for sections
 
-header, footer {
-    padding: 42px $hpv;
+header {
+    padding: 24px $hpvMobile;
+}
+
+footer {
+  padding: 0 $hpvMobile;
 }
 
 .headerWrapper {
@@ -17,7 +22,7 @@ form {
     }
 
     span {
-      display: block;
+        display: block;
         margin-bottom: 1.5rem;
     }
 
@@ -25,7 +30,8 @@ form {
       background: #020204;
       border: 1px solid #18181B;
       color: #71717A;
-      padding: 1rem 4rem 1rem 1rem;
+      padding: 1rem 2rem 1rem 1rem;
+      width: 38%;
 
       &[type="text"] {
         color: #A5ACAF;
@@ -34,9 +40,17 @@ form {
     }
 
     button {
+      font-family: 'Mona-Sans-Light';
+      padding: 1rem;
       background: #217960;
-      color: #FFFFFF;
-      padding: 1rem 1.5rem;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 14px;
+
+      svg {
+        margin-left: 12px;
+      }
+
     }
 
   }
@@ -44,16 +58,15 @@ form {
 main {
 
     section {
-        padding: 0 $hpv;
-        // background: rgb(26, 26, 26);
-        // height: calc(100vh - 132px);
-        height: 100vh;
+        padding: 0 $hpvMobile;
+        display: block;
 
         a.primaryButton {
-            padding: 1rem 2rem;
+            padding: 1rem;
             background: #217960;
             color: #fff;
             margin-right: 1.5rem;
+            max-width: 40%;
 
             svg {
               margin-left: 12px;
@@ -68,6 +81,125 @@ main {
             padding: 10px 0;
             margin-top: 78px;
         }
+
+        .contentWrapper {
+            max-width: 100%;
+            margin-bottom: 48px;
+
+            h1,h4,h5 {
+                margin-bottom: 16px;
+            }
+
+            p {
+                margin-bottom: 16px;
+            }
+
+            .ctaWrapper {
+                display: flex;
+                text-align: center;
+
+                form {
+                  display: flex;
+                  input {
+                    width: 35%;
+                  }
+                }
+
+                a.primaryButton {
+                  padding: 1rem;
+                  background: #217960;
+                  color: #fff;
+                  margin-right: 1.5rem;
+                  display: block;
+                  width: 50%;
+    
+                  svg {
+                    margin-left: 12px;
+                  }
+              }
+    
+              a.secondaryButton {
+                  padding: 1rem 2rem;
+                  background: #0C0D10;
+                  border: 1px solid #217960;
+                  color: #fff;
+                  display: block;
+                  width: 50%;
+              }
+            } 
+        } 
+    }
+
+    .section_flex {
+      display: block;
+    }
+
+    .section_with_subSections {
+        display: block;
+        padding: 0;
+
+        & > .should_Flex {
+            display: block;
+            padding: 0 $hpvMobile;
+            margin-top: 48px;
+
+            .contentWrapper {
+                width: auto;
+            }
+
+            .imageWrapper {
+                img {
+                  width: 100%;
+                }
+                // something generic could be here
+            }
+
+        }
+
+        & > .should_stack {
+          margin-top: 48px;
+          padding: 0 $hpvMobile;
+        }
+
+        & > .should_grid {
+            padding: 0 $hpvMobile;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+  header, footer {
+    padding: 42px $hpv;
+  }
+
+  .headerWrapper {
+      // position: fixed;
+      width: 100%; 
+  }
+
+  form {
+    button {
+      font-size: 16px;
+      padding: 1rem 2rem;
+    }
+    input {
+      padding: 1rem 4rem 1rem 1rem;
+    }
+  }
+
+  main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      section {
+        padding: 0 $hpv;
+        height: 100vh;
+
+        a.primaryButton {
+          padding: 1rem 2rem;
+      }
 
         .contentWrapper {
             max-width: 60%;
@@ -85,9 +217,8 @@ main {
 
                 a.primaryButton {
                   padding: 1rem 2rem;
-                  background: #217960;
-                  color: #fff;
                   margin-right: 1.5rem;
+                  width: auto;
     
                   svg {
                     margin-left: 12px;
@@ -99,6 +230,7 @@ main {
                   background: #0C0D10;
                   border: 1px solid #217960;
                   color: #fff;
+                  width: auto;
               }
             } 
         } 
@@ -108,7 +240,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-  }
+    }
 
     .section_with_subSections {
         height: unset;
@@ -147,4 +279,5 @@ main {
             padding: 0 $hpv;
         }
     }
+  }
 }

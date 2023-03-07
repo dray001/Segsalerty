@@ -4,6 +4,13 @@ import { Link, useLocation } from "react-router-dom";
 import './header.scss';
 import headerLogo from '../../images/brandAssets/logoHeader.svg';
 
+let menu = <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="2" rx="1" fill="#D9D9D9"/>
+              <rect y="6" width="20" height="2" rx="1" fill="#D9D9D9"/>
+              <rect y="12" width="20" height="2" rx="1" fill="#D9D9D9"/>
+            </svg>
+
+
 const Header = () => {
   return (
     <header className='header'>
@@ -23,8 +30,11 @@ const Header = () => {
           <li><Link to="/aboutUs">About Us</Link></li>
         </ul>
 
-        <Link href="#">Donate</Link>
+        <Link to="/register">Donate</Link>
       </nav>
+
+      <div className='menu'>{menu}</div>
+      
     </header>
   );
 };

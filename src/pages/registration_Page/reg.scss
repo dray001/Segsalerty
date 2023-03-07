@@ -1,0 +1,143 @@
+.regWrapper {
+
+   .contactUs_Section {
+    height: auto;
+    // background: #F1F1F1;
+    padding: 0;
+    padding: 104px 80px;
+
+        .contentWrapper {
+            display: block;
+            margin: 0 auto;
+            margin-top: 32px;
+
+            p,h4 {
+                text-align: center;
+            }
+
+            .regType {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 72px;
+                
+                span {
+                    padding: 16px 40px;
+                    margin: 0;
+                    background: #0C0D10;
+                    cursor: pointer;
+
+                    &.active {
+                        border: 1px solid #217960;
+                    }
+                }
+            }
+
+            form.inputForm {
+
+                .inputGrp.active {
+                    display: block;
+                    margin-top: 32px;
+    
+    
+                    width: 100%;
+    
+                    h3 {
+                        font-family: 'Mona-Sans-Light';
+                        font-size: 18px;
+                    }
+    
+                    div {
+                        margin-bottom: 32px;
+                        display: flex;
+    
+                        span {
+                            display: block;
+                        }
+                        
+                        &.selectInput {
+                            position: relative;
+                            & > div {
+                                // display: block;
+                                display: flex;
+                            }
+                            svg {
+                                position: absolute;
+                                top: 50%;
+                                right: 18px;
+                            }
+    
+                            &.stack {
+                                display: block;          
+    
+                                div, label {
+                                    margin-bottom: 8px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+    
+                                    input {
+                                        flex: 1;
+                                    }
+    
+                                    input[type="file"] {
+                                        display: none;
+                                      }
+    
+                                      span {
+                                        font-size: 14px;
+                                        margin: 0;
+                                        font-family: 'Mona-Sans-Light';
+    
+                                        em {
+                                            text-decoration: underline;
+                                            color: #FFFFFF;
+                                        }
+                                    }
+    
+                                     svg {
+                                        top: 15px;
+                                        // display: none;
+                                    }
+                                }
+    
+                                span {
+                                    font-size: 12px;
+                                }
+    
+                                svg {
+                                    top: 28%;
+                                }
+                            }
+                        }
+    
+                        input[type="text"], input[type="file"],  select, label, textarea {
+                            flex: 1;
+                            border: 1px solid #18181B;
+                            color: #71717A;
+                            background: #0C0D10;
+                            padding: 1rem;
+                            margin-left: auto;
+                            font-family: 'Mona-Sans-Light';
+                        }
+    
+                        input::placeholder, select::placeholder, textarea::placeholder {
+                            color: #71717A;
+                            font-family: 'Mona-Sans-Light';
+                          }
+    
+                        textarea {
+                            height: 164px;
+                        }
+                    }
+                }
+    
+                .inputGrp {
+                    display: none;
+                }
+            }
+
+            } 
+        } 
+
+}

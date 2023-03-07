@@ -4,8 +4,6 @@ import towerboxImg from '../images/landingPage/towerBox.png'
 import bannerImg from '../images/landingPage/bannerImg.png'
 import seg_resourcesImg from '../images/landingPage/seg_Resources.png'
 import seg_talentSupportImg from '../images/landingPage/seg_TalentSupport.png'
-import becomeClientImg from '../images/landingPage/become_A_Client.png'
-import joinCommunityImg from '../images/landingPage/join_our_community.png'
 
 // 3d icons import
 import puzzleImg from '../images/brandAssets/3dIcons/puzzle.png'
@@ -298,14 +296,14 @@ sections: [
                                 para: 'Get highly experienced engineers that can help achieve your organization’s goals in due time. What is your company looking to achieve? Save time, we have skill-equipped talents in line with your goals.',
                                 notice: 'There are many ways to contribute to our cause',
                                 cta: 'Become a client',
-                                image: becomeClientImg
+                                image: ''
                             },
                             {
                                 heading: 'Join our community',
                                 para: 'Do you have passion for creating ideas, innovating, solving problems? Do you also have a strong desire to position yourself in the global tech ecosystem, then Segsalerty community is for you.',
                                 placeHolder: 'Enter email address',
                                 cta: 'Join the network',
-                                image: joinCommunityImg
+                                image: ''
                             }
 
                         ]

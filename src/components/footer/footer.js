@@ -49,43 +49,49 @@ const Footer = () => {
   return (
     <footer className='footer'>
 
-      <div className='footer_links_cta'>
-        <img src={footerLogo} alt=""/>
+      <div className='footerWrapper'>
+          <img src={footerLogo} alt=""/>
 
-        <nav className='footer_nav'>
-          <div>
-            <h3>Branches</h3>
-            <ul>
-              <li><a href="#">STS</a></li>
-              <li><a href="#">SRS</a></li>
-            </ul>
-          </div>
+         <div className='footer_links_cta'>
 
-          <div>
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">Our Mission</a></li>
-              <li><a href="#">Our Vision</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </div>
+          <form className='footer_form'>
+              <h3>Join the community</h3>
+              <span>Get Access to our equipped state-of-the-art facility</span>
+              <div className='cta'>
+                <input type="text" id="search" name="search" placeholder="Enter email address" />
+                <button type="submit">Join the network</button>
+              </div>
+          </form>
 
-          <div>
-            <h3>Support</h3>
-            <ul>
-              <li><a href="#">Become a Partner</a></li>
-              <li><a href="#">Become a Client</a></li>
-              <li><a href="#">Buy us coffee</a></li>
-            </ul>
-          </div>
-        </nav>
+          <nav className='footer_nav'>
+            <div>
+              <h3>Branches</h3>
+              <ul>
+                <li><a href="#">STS</a></li>
+                <li><a href="#">SRS</a></li>
+              </ul>
+            </div>
 
-        <form className='footer_form'>
-            <h3>Join the community</h3>
-            <span>Get Access to our equipped state-of-the-art facility</span>
-            <input type="text" id="search" name="search" placeholder="Enter email address" />
-            <button type="submit">Join the network</button>
-        </form>
+            <div>
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#">Become a Partner</a></li>
+                <li><a href="#">Become a Client</a></li>
+                <li><a href="#">Buy us coffee</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
       </div>
 
 

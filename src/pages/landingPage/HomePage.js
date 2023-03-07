@@ -2,6 +2,7 @@
 import './homePage.scss';
 // import Layout from '../../components/layout'
 import {homePageData} from '../../data/homePageData'
+import Ctas from '../../components/ctas/Ctas'
 
 let heroSection = homePageData.sections[0], 
 introSection = homePageData.sections[1], 
@@ -202,7 +203,7 @@ const HomePage = () => {
                 <h4 dangerouslySetInnerHTML={{ __html: socialProofSection.sections[0].heading}} />
                 <p>{socialProofSection.sections[0].para}</p>
                 <div className='ctaWrapper'>
-                  <a className='primaryButton' href={socialProofSection.sections[0].url[0]}> {socialProofSection.sections[0].cta[0]} </a>
+                  <a className='primaryButton' href={socialProofSection.sections[0].url[0]}> Join </a>
                   <a className='secondaryButton' href={socialProofSection.sections[0].url[1]}> {socialProofSection.sections[0].cta[1]} </a>
                 </div>
               </div>
@@ -247,44 +248,7 @@ const HomePage = () => {
             
           </section>
 
-          <section className='joinSegsalerty section_with_subSections'>
-
-            <h5 className='sectionLabel'>{programSection.label}</h5>
-
-            <div className='be_a_client should_Flex'>
-
-              <div className='contentWrapper'>
-                <h4 dangerouslySetInnerHTML={{ __html: jionUsSection.sections[0].heading}} />
-                <p>{jionUsSection.sections[0].para}</p>
-                <div className='ctaWrapper'>
-                  <a className='primaryButton' href={jionUsSection.sections[0].url}>{jionUsSection.sections[0].cta}</a>
-                </div>
-              </div>
-
-              <div className='imageWrapper'>
-                <img src={jionUsSection.sections[0].image} alt="" />
-              </div>
-
-            </div>
-
-            <div className='join-community should_Flex'>
-
-              <div className='contentWrapper'>
-                <h4 dangerouslySetInnerHTML={{ __html: jionUsSection.sections[1].heading}} />
-                <p>{jionUsSection.sections[1].para}</p>
-                <form className='footer_form'>
-                    <input type="text" id="search" name="search" placeholder={jionUsSection.sections[1].placeHolder} />
-                    <button type="submit">{jionUsSection.sections[1].cta}</button>
-                </form>
-              </div>
-
-              <div className='imageWrapper'>
-                <img src={jionUsSection.sections[1].image} alt="" />
-              </div>
-
-            </div>
-
-          </section>
+          <Ctas />
 
         </div> 
   );
