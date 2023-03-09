@@ -47,7 +47,7 @@ const Reg = () => {
               
               <div className='contentWrapper'>
                 <h4>Register to join STSS</h4>
-                <p> Don’t take our words for it directly. See what our students have to say about their experience with segsalerty resources and talent support. </p>
+                <p> Don’t take our words for it directly. See what our students have to say abnout their experience with segsalerty resources and talent support. </p>
 
                 <div className='regType'> <span onClick={flip} className={state ? '' : 'active'} >1. Persona </span> {line} <span onClick={flip} className={state ? 'active' : ''}>2. Career </span> </div>
 

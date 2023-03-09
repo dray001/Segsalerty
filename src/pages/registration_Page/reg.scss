@@ -4,7 +4,7 @@
     height: auto;
     // background: #F1F1F1;
     padding: 0;
-    padding: 104px 80px;
+    padding: 40px 24px;
 
         .contentWrapper {
             display: block;
@@ -21,9 +21,13 @@
                 justify-content: center;
                 margin: 0 auto;
                 margin-bottom: 72px;
+
+                svg {
+                    width: 64px;
+                }
                 
                 span {
-                    padding: 16px 40px;
+                    padding: 16px 24px;
                     margin: 0;
                     background: #0C0D10;
                     cursor: pointer;
@@ -35,6 +39,10 @@
             }
 
             form.inputForm {
+                button {
+                    display: flex;
+                    align-items: center;
+                }
 
                 .inputGrp.active {
                     display: block;
@@ -45,7 +53,8 @@
     
                     h3 {
                         font-family: 'Mona-Sans-Light';
-                        font-size: 18px;
+                        font-size: 14px;
+                        line-height: 18px;
                     }
     
                     div {
@@ -139,5 +148,24 @@
 
             } 
         } 
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .contactUs_Section {
+        height: auto;
+        // background: #F1F1F1;
+        padding: 0;
+        padding: 104px 80px;
+
+        .contentWrapper {
+            .regType {
+                span {
+                    padding: 16px 40px;
+                }
+            }
+        }
+    }
 
 }

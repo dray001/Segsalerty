@@ -61,6 +61,10 @@ main {
         padding: 0 $hpvMobile;
         display: block;
 
+        &:first-of-type {
+          padding-top: 40px;
+        }
+
         a.primaryButton {
             padding: 1rem;
             background: #217960;
@@ -79,7 +83,7 @@ main {
             background: #0C0D10;
             text-align: center;
             padding: 10px 0;
-            margin-top: 78px;
+            margin-top: 32px;
         }
 
         .contentWrapper {
@@ -92,6 +96,7 @@ main {
 
             p {
                 margin-bottom: 16px;
+                font-size: 16px;
             }
 
             .ctaWrapper {
@@ -200,6 +205,32 @@ main {
         a.primaryButton {
           padding: 1rem 2rem;
       }
+
+      .sectionLabel {
+        margin-top: 78px;
+    }
+
+      .ctaWrapper {
+        display: flex;
+
+        a.primaryButton {
+          padding: 1rem 2rem;
+          margin-right: 1.5rem;
+          width: auto;
+
+          svg {
+            margin-left: 12px;
+          }
+      }
+
+      a.secondaryButton {
+          padding: 1rem 2rem;
+          background: #0C0D10;
+          border: 1px solid #217960;
+          color: #fff;
+          width: auto;
+      }
+    } 
 
         .contentWrapper {
             max-width: 60%;

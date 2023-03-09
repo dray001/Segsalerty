@@ -1,7 +1,7 @@
 .becomeParticipant_Section {
-    height: 80vh;
+    height: 502px;
     padding: 0;
-    margin: 150px 0 0 0;
+    margin: 48px 0 0 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/STS_Page/becomeParticipant.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,6 +11,19 @@
     align-items: flex-start;
 
     .contentWrapper {
-        padding: 0 0 80px 80px;
+        padding: 24px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .becomeParticipant_Section {
+        height: 80vh;
+        padding: 0;
+        margin: 150px 0 0 0;
+
+        .contentWrapper {
+            padding: 0 0 80px 80px;
+        }
     }
 }

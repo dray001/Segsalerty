@@ -280,6 +280,10 @@
         }
     
         .openSlotSection {
+
+            .contentWrapper {
+                margin-bottom: 0;
+            }
     
             .should_Flex {
                 margin-top: 64px;
@@ -304,6 +308,7 @@
     
                 img {
                     height: 384px;
+                    display: block;
                     // transform: translateX(-150px);
                 }
             }

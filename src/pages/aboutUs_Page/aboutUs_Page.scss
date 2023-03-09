@@ -3,6 +3,7 @@
     .titleSlash {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     
         span {
             content: '';
@@ -13,26 +14,24 @@
         }
 
         h4 {
-            min-width: 264px;
+            min-width: 164px;
             padding-right: 20px;
         }
 
     }
     
     .client_Section {
-        height: 86vh;
+        height: auto;
         padding: 0;
         margin: 0;
         background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
+        background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
 
         .contentWrapper {
-            padding: 0 0 40px 80px;
+            padding: 88px 24px;
+            margin: 0;
+            text-align: center;
 
             & > p {
                 margin-bottom: 24px;
@@ -45,7 +44,7 @@
         height: auto;
         background: #F1F1F1;
         color: #000;
-        padding: 104px 80px;
+        padding: 40px 24px;
 
         & > div {
             // margin: 80px 92px;
@@ -70,16 +69,16 @@
         }
 
         & > div:last-child {
-            margin-top: 132px;
+            margin-top: 48px;
 
             .titleSlash {
 
                 span {
-                    width: 100%;
+                    width: 20%;
                 }
 
                 h4 {
-                    min-width: 414px;
+                    min-width: 114px;
                 }
 
             }
@@ -87,6 +86,11 @@
     }
 
     .whatWeDoSection {
+
+        .imageWrapper {
+            display: none;
+        }
+
         .listingWrapper {
             & > div {
                 display: flex;
@@ -107,15 +111,17 @@
         }
 
         .vision {
-            flex-direction: row-reverse;
+            margin-top: 64px;
+            display: block;
 
             .contentWrapper {
-                width: 48%;
+                width: auto;
+                margin-bottom: 0;
 
                 .value {
 
                     .listingWrapper {
-                        display: flex;
+                        display: block;
                         margin-top: 24px;
     
                         & > div {
@@ -140,24 +146,27 @@
                         }
                     }
                 }
+
             }
+
         }
       
    }
 
    .founder {
-    margin-top: 140px;
+    margin-top: 104px;
 
     .titleSlash {
 
-        padding: 0 80px;
+        padding: 0 24px;
     
         span {
             background: #F1F1F1;
+            width: 40%;
         }
 
         h4 {
-            min-width: 264px;
+            min-width: 148px;
             padding-right: 20px;
             background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
             -webkit-background-clip: text;
@@ -169,6 +178,17 @@
 
     }
 
+    .should_Flex {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .imageWrapper {
+            margin-bottom: 32px;
+        }
+    }
+
+
+
     .contentWrapper {
         & > p {
             margin: 0;
@@ -177,7 +197,7 @@
 
         .listingWrapper {
             margin-top: 48px;
-            display: flex;
+            display: block;
 
             div {
                 display: flex;
@@ -194,15 +214,16 @@
     .afiliation {
         background: #0C0D10;
         padding: 24px 0;
-        margin-top: 80px;
+        margin-top: 0;
         text-align: center;
         color: #d0d0d0;
 
         & > div {
             margin: auto;
             display: flex;
-            width: 70%;
+            width: auto;
             justify-content: space-between;
+            overflow-x: scroll;
 
             img {
                 opacity: 0.3;
@@ -224,14 +245,17 @@
     background: #F1F1F1;
     color: #000;
     padding: 0;
-    padding: 104px 80px;
-
-    margin-top: 148px;
+    padding: 40px 24px;
+    margin-top: 64px;
 
     .titleSlash {
         h4 {
-            min-width: 320px;
+            // min-width: 300px;
             padding-right: 20px;
+        }
+
+        span {
+            width: 30%;
         }
     }
 
@@ -241,36 +265,18 @@
 
 
         .contentWrapper {
-            display: flex;
+            display: block;
             // margin-left: auto;
             margin-top: 32px;
             max-width: unset;
-            justify-content: space-between;
 
             .labelGrp {
-                width: 50%;
-
-                & > div {
-                    margin-bottom: 52px;
-                }
-                
-                h3 {
-                    font-family: 'Mona-Sans-BoldWide';
-                    font-size: 18px;
-                    line-height: 130%;
-                    letter-spacing: 0.02em;
-                    text-transform: uppercase;
-                }
-
-                span {
-                    display: block;
-                    margin-bottom: 8px;
-                }
+                display: none;
             }
 
             .inputGrp {
-
-                width: 50%;
+                display: block;
+                width: auto;
 
                 h3 {
                     font-family: 'Mona-Sans-Light';
@@ -280,8 +286,6 @@
                 div {
                     margin-bottom: 32px;
                     display: flex;
-                    // flex-direction: column;
-                    // flex-wrap: wrap;
 
                     input[type="text"], textarea {
                         flex: 1;
@@ -290,6 +294,7 @@
                         color: #373737;
                         padding: 1rem;
                         margin-left: auto;
+                        width: 100%;
                     }
 
                     textarea {
@@ -309,4 +314,339 @@
             } 
     } 
 }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutUsWrapper {
+
+        .titleSlash {
+            display: flex;
+            align-items: center;
+            justify-content: unset;
+        
+            span {
+                content: '';
+                top: 50%;
+                height: 2px;
+                width: 100%;
+                background: #000;
+            }
+    
+            h4 {
+                min-width: 264px;
+                padding-right: 20px;
+            }
+    
+        }
+        
+        .client_Section {
+            height: 86vh;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+    
+            .contentWrapper {
+                padding: 0 0 40px 80px;
+                text-align: left;
+    
+                & > p {
+                    margin-bottom: 24px;
+                    font-size: 24px;
+                }
+            }
+    
+        }
+    
+        .aboutUs_Section {
+            height: auto;
+            background: #F1F1F1;
+            color: #000;
+            padding: 104px 80px;
+    
+            & > div {
+                // margin: 80px 92px;
+                .contentWrapper {
+                margin-left: auto;
+                margin-top: 32px;
+    
+                    h5 {
+                        font-size: 24px;
+                        line-height: 140%;
+                    }
+    
+                    p {
+                        color: #000;
+                    }
+                    
+                    a.secondaryButton {
+                        background: #E4E4E7;
+                        color: #020204;
+                    }
+                } 
+            }
+    
+            & > div:last-child {
+                margin-top: 132px;
+    
+                .titleSlash {
+    
+                    span {
+                        width: 100%;
+                    }
+    
+                    h4 {
+                        min-width: 414px;
+                    }
+    
+                }
+            }    
+        }
+    
+        .whatWeDoSection {
+
+            .imageWrapper {
+                display: flex;
+            }
+
+            .listingWrapper {
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 32px;
+    
+                    svg {
+                        background: #0C0D10;
+                        border: 1px solid #231F20;
+                        padding: 8px;
+                        margin-right: 12px;
+                    }
+    
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+    
+            .vision {
+                display: flex;
+                flex-direction: row-reverse;
+    
+                .contentWrapper {
+                    width: 48%;
+    
+                    .value {
+    
+                        .listingWrapper {
+                            display: flex;
+                            margin-top: 24px;
+        
+                            & > div {
+                                margin-right: 24px;
+                            }
+                        }
+                    }
+    
+                    .ratings {
+                        & > div {
+                            display: flex;
+                            margin-top: 24px;
+    
+                            svg {
+                                margin-right: 8px;
+                            }
+    
+                            p {
+                                margin: 0;
+                                display: inline;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+       }
+    
+       .founder {
+        margin-top: 140px;
+    
+        .titleSlash {
+    
+            padding: 0 80px;
+        
+            span {
+                background: #F1F1F1;
+                width: 100%;
+            }
+    
+            h4 {
+                min-width: 264px;
+                padding-right: 20px;
+                background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                text-transform: uppercase;
+            }
+    
+        }
+
+        .should_Flex {
+            flex-direction: row;
+        }
+    
+        .contentWrapper {
+            & > p {
+                margin: 0;
+                margin-top: 32px;
+            }
+    
+            .listingWrapper {
+                margin-top: 48px;
+                display: flex;
+    
+                div {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 40px;
+    
+                    p {
+                        margin: 0 0 0 12px;
+                    }
+                }
+            }
+        }
+    
+        .afiliation {
+            background: #0C0D10;
+            padding: 24px 0;
+            margin-top: 80px;
+            text-align: center;
+            color: #d0d0d0;
+    
+            & > div {
+                margin: auto;
+                display: flex;
+                width: 70%;
+                justify-content: space-between;
+    
+                img {
+                    opacity: 0.3;
+                    margin-top: 24px;
+                }
+            }
+        }
+        
+       }
+    
+       .joinSegsalerty {
+        h5 {
+            display: none;
+        }
+       }
+    
+       .contactUs_Section {
+        height: auto;
+        background: #F1F1F1;
+        color: #000;
+        padding: 0;
+        padding: 104px 80px;
+    
+        margin-top: 148px;
+    
+        .titleSlash {
+            h4 {
+                min-width: 320px;
+                padding-right: 20px;
+            }
+
+            span {
+                width: 80%;
+            }
+        }
+    
+        & > div {
+            // margin: 80px 92px;
+            width: 100%;
+    
+    
+            .contentWrapper {
+                display: flex;
+                // margin-left: auto;
+                margin-top: 32px;
+                max-width: unset;
+                justify-content: space-between;
+    
+                .labelGrp {
+                    width: 50%;
+                    display: block;
+    
+                    & > div {
+                        margin-bottom: 52px;
+                    }
+                    
+                    h3 {
+                        font-family: 'Mona-Sans-BoldWide';
+                        font-size: 18px;
+                        line-height: 130%;
+                        letter-spacing: 0.02em;
+                        text-transform: uppercase;
+                    }
+    
+                    span {
+                        display: block;
+                        margin-bottom: 8px;
+                    }
+                }
+    
+                .inputGrp {
+    
+                    width: 50%;
+    
+                    h3 {
+                        font-family: 'Mona-Sans-Light';
+                        font-size: 18px;
+                    }
+    
+                    div {
+                        margin-bottom: 32px;
+                        display: flex;
+                        // flex-direction: column;
+                        // flex-wrap: wrap;
+    
+                        input[type="text"], textarea {
+                            flex: 1;
+                            background: #E4E4E7;
+                            border: 1px solid #A5ACAF;
+                            color: #373737;
+                            padding: 1rem;
+                            margin-left: auto;
+                        }
+    
+                        textarea {
+                            height: 164px;
+                        }
+                    }
+                    
+                        button {
+                          background: #217960;
+                          color: #FFFFFF;
+                          padding: 1rem 1.5rem;
+                          display: block;
+                          margin-left: auto;
+                        }
+                }
+    
+                } 
+        } 
+    }
+    }
 }
