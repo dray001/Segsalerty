@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Route, Routes } from "react-router-dom";
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
@@ -11,10 +11,24 @@ import Reg from './pages/registration_Page/Reg'
 import './App.scss';
 
 function App() {
+
+  const [state, setState] = useState(false);
+
+  const toggleState =()=> {
+    setState(!state);
+  }
+
+  const toFlase =()=> {
+    setState(false);
+  }
+
+  console.log(state);
+
   return (
     <div>
+      <div onClick={toggleState} className={state ? 'modal active' : 'modal'}></div>
       <div className='headerWrapper'>     
-        <Header/>
+        <Header flip = {state} menuFlip = {toggleState} reset = {toFlase} />
       </div>
 
       <main>
