@@ -87,7 +87,6 @@ const Events = () => {
               <TestimonialCard />
               <TestimonialCard />
               <TestimonialCard />
-              <TestimonialCard />
             </div>
 
           </section>

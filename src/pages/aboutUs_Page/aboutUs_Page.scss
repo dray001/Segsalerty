@@ -316,7 +316,7 @@
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .aboutUsWrapper {
 
         .titleSlash {
@@ -340,7 +340,7 @@
         }
         
         .client_Section {
-            height: 86vh;
+            height: 70vh;
             padding: 0;
             margin: 0;
             background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
@@ -352,7 +352,7 @@
             align-items: flex-start;
     
             .contentWrapper {
-                padding: 0 0 40px 80px;
+                padding: 0 0 40px 40px;
                 text-align: left;
     
                 & > p {
@@ -367,10 +367,9 @@
             height: auto;
             background: #F1F1F1;
             color: #000;
-            padding: 104px 80px;
+            padding: 80px 40px;
     
             & > div {
-                // margin: 80px 92px;
                 .contentWrapper {
                 margin-left: auto;
                 margin-top: 32px;
@@ -443,7 +442,7 @@
                     .value {
     
                         .listingWrapper {
-                            display: flex;
+                            display: block;
                             margin-top: 24px;
         
                             & > div {
@@ -558,7 +557,7 @@
         background: #F1F1F1;
         color: #000;
         padding: 0;
-        padding: 104px 80px;
+        padding: 80px 40px;
     
         margin-top: 148px;
     
@@ -648,5 +647,62 @@
                 } 
         } 
     }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .aboutUsWrapper {
+        .titleSlash {
+        
+            span {
+                top: 50%;
+                height: 2px;
+                width: 100%;
+            }
+    
+            h4 {
+                min-width: 264px;
+                padding-right: 20px;
+            }
+    
+        }
+
+        .client_Section {
+            height: 86vh;
+            background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
+    
+            .contentWrapper {
+                padding: 0 0 40px 80px;
+    
+                & > p {
+                    margin-bottom: 24px;
+                    font-size: 24px;
+                }
+            }
+    
+        }
+
+        .aboutUs_Section {
+            padding: 104px 80px;  
+        }
+
+        .whatWeDoSection {
+            .vision {
+                .contentWrapper {
+                    .value {
+                       .listingWrapper {
+                        display: flex;
+                        margin-top: 24px;
+                       } 
+                    }
+                }
+            }
+        }
+
+        .contactUs_Section {
+            padding: 104px 80px;
+            margin-top: 148px;
+        }
+
     }
 }

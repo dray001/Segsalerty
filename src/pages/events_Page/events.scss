@@ -249,84 +249,17 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .eventsWrapper {
-    
-        .talentHunt_Section {
-            // height: 80vh;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            background: linear-gradient(183.49deg, rgba(0, 0, 0, 0) 2.87%, rgba(0, 0, 0, 0.9) 50.04%), url('../../images/eventPage/becomeParticipantEvent.png');
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-    
-            .contentWrapper {
-                text-align: left;
-                padding: 0 0 40px 80px;
-                margin: unset;
-    
-                & > p {
-                    margin-bottom: 24px;
-                }
-            }
-    
-            .booking {
-                margin: 0 0 80px 80px;
-                display: flex;
-                align-items: center;
-                width: 90%;
-                justify-content: space-between;
-
-                .ctaWrapper.mobile {
-                    display: none;
-                }
-    
-                .notMobile.viewProgram {
-                    display: flex;
-                    background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                    text-decoration-line: underline;
-    
-                    svg {
-                        margin-left: 16px;
-                    }
-                }
-    
-                .bookInfo {
-                    display: flex;
-    
-                    p {
-                        color: #020204;
-                        padding: 0;
-                        background: #F1F1F1;
-                        border: 1px solid #217960;
-                        padding: 16px;
-                        margin-bottom: 0;
-                    }
-    
-                    .primaryButton.notMobile {
-                        display: flex;
-                        align-items: center;
-                    }
-    
-                }
-    
-            }
-        }
     
         .event_Section {
     
             .eventsWrapper {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 20px;
-                row-gap: 48px;
-                margin: 64px 80px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                row-gap: 24px;
+                margin: 64px 40px;
                 padding: 0;
     
                 .eventCard {
@@ -397,7 +330,7 @@
     
             .testimonialWrapper {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 32px;
     
                 .testCard {
@@ -515,5 +448,97 @@
     
         }
     
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .eventsWrapper {
+        .talentHunt_Section {
+            // height: 80vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background: linear-gradient(183.49deg, rgba(0, 0, 0, 0) 2.87%, rgba(0, 0, 0, 0.9) 50.04%), url('../../images/eventPage/becomeParticipantEvent.png');
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+    
+            .contentWrapper {
+                text-align: left;
+                padding: 0 0 40px 80px;
+                margin: unset;
+    
+                & > p {
+                    margin-bottom: 24px;
+                }
+            }
+    
+            .booking {
+                margin: 0 0 80px 80px;
+                display: flex;
+                align-items: center;
+                width: 90%;
+                justify-content: space-between;
+
+                .ctaWrapper.mobile {
+                    display: none;
+                }
+    
+                .notMobile.viewProgram {
+                    display: flex;
+                    background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    text-decoration-line: underline;
+    
+                    svg {
+                        margin-left: 16px;
+                    }
+                }
+    
+                .bookInfo {
+                    display: flex;
+    
+                    p {
+                        color: #020204;
+                        padding: 0;
+                        background: #F1F1F1;
+                        border: 1px solid #217960;
+                        padding: 16px;
+                        margin-bottom: 0;
+                    }
+    
+                    .primaryButton.notMobile {
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                }
+    
+            }
+        }
+
+        .event_Section {
+
+            .eventsWrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                row-gap: 48px;
+                margin: 64px 80px;
+                padding: 0;
+            }
+        }
+
+        .testimonial_Section {
+    
+            .testimonialWrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 32px;
+            }
+        }
     }
 }

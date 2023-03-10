@@ -151,15 +151,16 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
 
     .contactUs_Section {
         height: auto;
         // background: #F1F1F1;
         padding: 0;
-        padding: 104px 80px;
+        padding: 80px 40px;
 
         .contentWrapper {
+            max-width: 80%;
             .regType {
                 span {
                     padding: 16px 40px;
@@ -167,5 +168,20 @@
             }
         }
     }
+}
 
+@media screen and (min-width: 1025px) {
+
+    .contactUs_Section {
+        padding: 104px 80px;
+
+        .contentWrapper {
+            max-width: 60%;
+            .regType {
+                span {
+                    padding: 16px 40px;
+                }
+            }
+        }
+    }
 }

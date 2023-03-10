@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .faq_Section {
         text-align: center;
         display: block;
@@ -49,7 +49,7 @@
         }
     
         .questionsWrapper {
-            max-width: 70%;
+            max-width: 100%;
             margin: auto;
 
             .question {
@@ -61,5 +61,15 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .faq_Section {
+
+        .questionsWrapper {
+            max-width: 70%;
+        }
+
     }
 }

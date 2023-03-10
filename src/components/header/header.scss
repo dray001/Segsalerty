@@ -6,7 +6,7 @@
 
     .logo {
         img {
-            height: 16px;
+            height: 32px;
             width: auto;
         }
     }
@@ -157,7 +157,7 @@
             align-items: center;
 
             & > a {
-                padding: 1rem 4rem;
+                padding: 1rem 2rem;
                 background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
             }
 
@@ -169,7 +169,7 @@
                 margin-bottom: 0;
             
                 li {
-                    margin-left: 4rem;
+                    margin-left: 3rem;
                     margin-bottom: 0px;
 
                     a {

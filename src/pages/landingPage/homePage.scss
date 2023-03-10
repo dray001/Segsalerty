@@ -267,7 +267,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .homePageWrapper {
         .heroSection {
             display: flex;
@@ -281,6 +281,10 @@
                 display: flex;
                 width: 40%;
                 justify-content: center;
+
+                img {
+                    width: 280px;
+                }
             }
 
             .contentWrapper {
@@ -289,21 +293,28 @@
         }
     
         .introSection {
-            height: 80vh;
+            height: 60vh;
             padding: 0;
-            margin: 0 80px;
+            margin: 40px 40px 0 40px;
     
             .contentWrapper {
-                padding: 0 0 48px 48px;
+                padding: 0 0 40px 40px;
+                margin: 0;
             }
         }
     
         .programSection {
+
+            .should_Flex {
+                .contentWrapper {
+                    width: 60%;
+                }
+            }
     
-             .imageWrapper{
+             .imageWrapper {
     
-                height: 544px;
-                width: 523px;
+                height: 344px;
+                width: 223px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -357,11 +368,7 @@
         .aboutUsSection {
     
             .reasons {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 48px;
-                justify-items: center;
-                align-items: center;
+                display: block;
     
                 .reasons_card {
                     background: #0C0D10;
@@ -460,6 +467,15 @@
         }
     
         .socialProofSection {
+
+            .successStories {
+                display: block;
+
+                .contentWrapper {
+                    width: auto;
+                    max-width: auto;
+                }
+            }
     
             .metrics {
                 background-color: #555657;
@@ -528,5 +544,80 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .homePageWrapper {
+        .heroSection {
+
+            .imageWrapper {
+                display: flex;
+                width: 40%;
+                justify-content: center;
+
+                img {
+                    width: auto;
+                }
+            }
+
+        }
+
+        .introSection {
+            height: 80vh;
+            padding: 0;
+            margin: 0 80px;
+    
+            .contentWrapper {
+                padding: 0 0 48px 48px;
+            }
+        }
+
+        .programSection {
+
+            .imageWrapper {
+                height: 544px;
+                width: 523px;
+            }
+
+            .should_Flex {
+                .contentWrapper {
+                    width: 50%;
+                }
+            }
+        }
+
+        .aboutUsSection {
+            .reasons {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 48px;
+                justify-items: center;
+                align-items: center;
+
+                .reasons_card {
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                }
+
+            }
+        }
+
+        .socialProofSection {
+            
+            .successStories {
+                display: flex;
+
+                .contentWrapper {
+                    // width: auto;
+                    max-width: 45%;
+                }
+            }
+        }
+
     }
 }

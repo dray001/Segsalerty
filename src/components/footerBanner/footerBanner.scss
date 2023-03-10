@@ -16,10 +16,20 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
+    .becomeParticipant_Section {
+        padding: 0;
+        margin: 150px 0 0 0;
+
+        .contentWrapper {
+            padding: 0 0 40px 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
     .becomeParticipant_Section {
         height: 80vh;
-        padding: 0;
         margin: 150px 0 0 0;
 
         .contentWrapper {

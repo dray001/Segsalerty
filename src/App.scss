@@ -1,5 +1,6 @@
-$hpv: 80px; // horizontal Padding Value
 $hpvMobile: 24px; // horizontal Padding Value Mobile
+$hpvTablet: 40px; // horizontal Padding Value Mobile
+$hpv: 80px; // horizontal Padding Value
 // $vpv: 124px; // vertical Padding Value for sections
 
 .modal {
@@ -11,7 +12,7 @@ $hpvMobile: 24px; // horizontal Padding Value Mobile
   height: 100vh;
   width: 100%;
   overflow-y: hidden;
-  position: absolute;
+  position: fixed;
   background: rgba(23, 23, 23, 0.697);
 }
 
@@ -194,98 +195,214 @@ main {
     }
 }
 
-@media screen and (min-width: 768px) {
-
-  .modal.active {
-    display: none;
-  }
+@media only screen and (min-width: 600px) {
 
   .modal {
     display: none;
   }
-
+  
   header, footer {
-    padding: 42px $hpv;
-  }
-
-  .headerWrapper {
-      // position: fixed;
-      width: 100%; 
+    padding: 32px $hpvTablet;
   }
 
   form {
     button {
       font-size: 16px;
-      padding: 1rem 2rem;
+      padding: 1rem;
     }
     input {
-      padding: 1rem 4rem 1rem 1rem;
+      padding: 1rem;
+      // width: 60%;
     }
   }
 
+  .headerWrapper {
+    // position: fixed;
+    width: 100%; 
+}
+
   main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
 
-      section {
-        padding: 0 $hpv;
-        height: 100vh;
+    section {
+      padding: 0 $hpvTablet;
+      height: auto;
 
-        a.primaryButton {
-          padding: 1rem 2rem;
+      a.primaryButton {
+        padding: 1rem 2rem;
       }
 
-      .sectionLabel {
-        margin-top: 78px;
+    .sectionLabel {
+      margin-top: 78px;
     }
 
-      .ctaWrapper {
-        display: flex;
+    .ctaWrapper {
+      display: flex;
 
-        a.primaryButton {
-          padding: 1rem 2rem;
-          margin-right: 1.5rem;
-          width: auto;
+      a.primaryButton {
+        padding: 1rem 2rem;
+        margin-right: 1.5rem;
+        width: auto;
 
-          svg {
-            margin-left: 12px;
+        svg {
+          margin-left: 12px;
+        }
+    }
+
+    a.secondaryButton {
+        padding: 1rem 2rem;
+        background: #0C0D10;
+        border: 1px solid #217960;
+        color: #fff;
+        width: auto;
+    }
+    } 
+
+    .contentWrapper {
+        max-width: 60%;
+
+        h1,h4,h5 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .ctaWrapper {
+            display: flex;
+
+            form {
+              input {
+                min-width: 200px;
+              }
+              button {
+                min-width: 120px;
+              }
+            }
+
+            a.primaryButton {
+              padding: 1rem 2rem;
+              margin-right: 1.5rem;
+              width: auto;
+
+              svg {
+                margin-left: 12px;
+              }
+          }
+
+          a.secondaryButton {
+              padding: 1rem 2rem;
+              background: #0C0D10;
+              border: 1px solid #217960;
+              color: #fff;
+              width: auto;
+          }
+        } 
+    } 
+  }
+
+  .section_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .imageWrapper {
+      img {
+        width: 200px;
+      }
+    }
+
+  }
+
+  .section_with_subSections {
+      height: unset;
+      padding: 0;
+
+      & > .should_Flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 $hpvTablet;
+          // padding: 0 80px;
+          margin-top: 108px;
+
+          .contentWrapper {
+              width: 45%;
+          }
+
+          .imageWrapper {
+              padding: 0;
+              img {
+                width: 340px
+                // display: none;
+              }
+              // something generic could be here
           }
       }
 
-      a.secondaryButton {
-          padding: 1rem 2rem;
-          background: #0C0D10;
-          border: 1px solid #217960;
-          color: #fff;
-          width: auto;
+      & > .should_stack {
+        margin-top: 108px;
+        padding: 0 $hpvTablet;
       }
-    } 
+
+      & > .should_grid {
+          padding: 0 $hpvTablet;;
+      }
+  }
+}
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .modal.active {
+    display: none;
+  }
+
+
+  header, footer {
+    padding: 42px $hpv;
+  }
+
+  main {
+
+      section {
+        padding: 0 $hpv;
+        height: 80vh;
 
         .contentWrapper {
-            max-width: 60%;
+          max-width: 60%;
+  
+          h1,h4,h5 {
+              margin-bottom: 2rem;
+          }
+  
+          p {
+              margin-bottom: 3rem;
+          }
+  
+          .ctaWrapper {
+              display: flex;
 
-            h1,h4,h5 {
-                margin-bottom: 2rem;
-            }
-
-            p {
-                margin-bottom: 3rem;
-            }
-
-            .ctaWrapper {
-                display: flex;
-
-                a.primaryButton {
-                  padding: 1rem 2rem;
-                  margin-right: 1.5rem;
-                  width: auto;
-    
-                  svg {
-                    margin-left: 12px;
-                  }
+              form {
+                input {
+                  max-width: 40%;
+                }
+                button {
+                  min-width: 120px;
+                }
               }
-    
+  
+              a.primaryButton {
+                padding: 1rem 2rem;
+                margin-right: 1.5rem;
+                width: auto;
+  
+                svg {
+                  margin-left: 12px;
+                }
+              }
+  
               a.secondaryButton {
                   padding: 1rem 2rem;
                   background: #0C0D10;
@@ -293,27 +410,25 @@ main {
                   color: #fff;
                   width: auto;
               }
-            } 
-        } 
-    }
+          } 
+        }
+      }
 
-    .section_flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+      .section_flex {
+    
+        .imageWrapper {
+          img {
+            width: auto;
+          }
+        }
+    
+      }
 
-    .section_with_subSections {
-        height: unset;
-        padding: 0;
+      .section_with_subSections {
 
         & > .should_Flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             min-height: 60vh;
             padding: 0 $hpv;
-            // padding: 0 80px;
             margin-top: 108px;
 
             .contentWrapper {
@@ -323,12 +438,10 @@ main {
             .imageWrapper {
                 padding: 0;
                 img {
-
                   width: 100%;
                 }
                 // something generic could be here
             }
-
         }
 
         & > .should_stack {
@@ -340,5 +453,6 @@ main {
             padding: 0 $hpv;
         }
     }
+
   }
 }

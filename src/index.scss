@@ -125,11 +125,11 @@ textarea,select,ul,li,input,button {
 //   all: initial;
 // }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   
   h1,h2 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 122.9%;
     text-align: left;
     text-transform: uppercase;
@@ -138,8 +138,8 @@ textarea,select,ul,li,input,button {
   h4 {
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 34px;
   }
   
   h5 {
@@ -171,4 +171,20 @@ textarea,select,ul,li,input,button {
     font-size: 16px;
   }
   
+}
+
+@media only screen and (min-width: 1025px) {
+
+  h1,h2 {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+  }
+
 }
