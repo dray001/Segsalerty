@@ -1,75 +1,78 @@
 .faq_Section {
+  text-align: center;
+  display: block;
+  padding-bottom: 30px;
+
+  .processWrapper {
+    margin-bottom: 100px;
+  }
+
+  .contentWrapper {
+    margin: auto;
+  }
+
+  .questionsWrapper {
+    width: auto;
+    margin: auto;
+    text-align: left;
+
+    .question {
+      background: #0c0d10;
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+
+      p {
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      span {
+        width: 48px;
+        height: 48px;
+        background: #000000;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .faq_Section {
     text-align: center;
     display: block;
 
     .contentWrapper {
-        margin: auto;
+      margin: auto;
     }
 
     .questionsWrapper {
-        width: auto;
-        margin: auto;
-        text-align: left;
+      max-width: 100%;
+      margin: auto;
 
-        .question {
-            background: #0C0D10;
-            border-radius: 16px;
-            padding: 16px;
-            display: flex;
-            cursor: pointer;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 32px;
+      .question {
+        padding: 16px;
 
-            p {
-                font-size: 14px;
-                color: #FFFFFF;
-            }
-
-            span {
-                width: 48px;
-                height: 48px;
-                background: #000000;
-                border-radius: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        p {
+          font-size: 18px;
+          color: #ffffff;
         }
+      }
     }
-}
-
-@media screen and (min-width: 600px) {
-    .faq_Section {
-        text-align: center;
-        display: block;
-    
-        .contentWrapper {
-            margin: auto;
-        }
-    
-        .questionsWrapper {
-            max-width: 100%;
-            margin: auto;
-
-            .question {
-                padding: 16px;
-    
-                p {
-                    font-size: 18px;
-                    color: #FFFFFF;
-                }
-            }
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
-    .faq_Section {
-
-        .questionsWrapper {
-            max-width: 70%;
-        }
-
+  .faq_Section {
+    .questionsWrapper {
+      max-width: 70%;
     }
+  }
 }

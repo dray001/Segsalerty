@@ -1,544 +1,579 @@
 .eventsWrapper {
-    
-    .talentHunt_Section {
-        // height: 80vh;
-        padding: 64px 24px;
+  .talentHunt_Section {
+    height: calc(100vh - 131px);
+    max-height: 900px;
+    padding: 64px 24px;
+    display: block;
+    background: linear-gradient(
+        183.49deg,
+        rgba(0, 0, 0, 0.9) 2.87%,
+        rgba(0, 0, 0, 0.9) 50.04%
+      ),
+      url("../../images/eventPage/becomeParticipantEvent.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .contentWrapper {
+      padding: 16px;
+      text-align: center;
+      margin: auto;
+
+      & > p {
+        margin-bottom: 24px;
+      }
+    }
+
+    .booking {
+      margin: auto;
+      display: block;
+      width: 90%;
+
+      & > .ctaWrapper {
         display: block;
-        background: linear-gradient(183.49deg, rgba(0, 0, 0, 0.9) 2.87%, rgba(0, 0, 0, 0.9) 50.04%), url('../../images/eventPage/becomeParticipantEvent.png');
+        margin-top: 16px;
+        text-align: center;
+
+        a.secondaryButton {
+          padding: 1rem 2rem;
+          background: #0c0d10;
+          border: 1px solid #217960;
+          color: #fff;
+          width: auto;
+          display: block;
+          margin-top: 16px;
+        }
+
+        a.primaryButton {
+          margin: 0;
+          display: block;
+          max-width: 100%;
+        }
+      }
+
+      .notMobile.viewProgram {
+        display: none;
+      }
+
+      .bookInfo {
+        display: block;
+        text-align: center;
+
+        p {
+          color: #020204;
+          padding: 0;
+          background: #f1f1f1;
+          border: 1px solid #217960;
+          padding: 16px;
+          margin-bottom: 0;
+        }
+
+        .primaryButton.notMobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .event_Section {
+    .eventsWrapper {
+      display: block;
+      padding: 0 24px;
+      margin-top: 40px;
+      // grid-template-columns: repeat(4, 1fr);
+      // gap: 20px;
+      // row-gap: 48px;
+      // margin: 64px 80px;
+
+      .eventCard {
+        border-radius: 8px;
+        background: #0c0d10;
+        margin-top: 24px;
+
+        img {
+          width: 100%;
+        }
+
+        .eventDetails {
+          display: flex;
+          padding: 16px;
+
+          .event_cardDate {
+            span {
+              font-family: "Mona-Sans-MediumWide";
+              font-size: 14px;
+              color: #217960;
+            }
+          }
+
+          .event_Info {
+            margin-left: 12px;
+
+            h5 {
+              font-size: 14px;
+              color: #f1f1f1;
+              line-height: 20px;
+              margin: 0;
+              width: 100%;
+            }
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              margin: 12px 0 18px;
+              line-height: 130%;
+              letter-spacing: 0.02em;
+              color: #a1a1aa;
+            }
+
+            a.viewProgram {
+              font-size: 12px;
+              text-decoration-line: underline;
+              color: rgb(255, 255, 255);
+
+              svg {
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial_Section {
+    margin-top: 104px;
+    height: auto;
+
+    .contentWrapper {
+      margin: auto;
+      text-align: center;
+    }
+
+    .testimonialWrapper {
+      display: block;
+
+      .testCard {
+        background: #0c0d10;
+        border: 1px solid #231f20;
+        max-width: 412px;
+        padding: 32px;
+        margin-top: 24px;
+
+        .testifier {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 16px;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: "Mona-Sans-MediumWide";
+            color: #217960;
+          }
+        }
+
+        .testifier_message {
+          margin-top: 24px;
+          p {
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #a5acaf;
+          }
+
+          span {
+            font-size: 12px;
+            background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery_Section {
+    margin-top: 104px;
+
+    .galleryWrapper {
+      margin-top: 40px;
+      display: block;
+
+      div {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url("../../images/eventPage/galleryImg_Office.png");
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 18px;
+        height: 346px;
+        margin-top: 24px;
 
-        .contentWrapper {
-            padding: 16px;
-            text-align: center;
-            margin: auto;
-
-            & > p {
-                margin-bottom: 24px;
-            }
+        h5 {
+          font-size: 24px;
+          line-height: 17px;
+          color: #e4e4e7;
+          margin-bottom: 8px;
         }
 
-        .booking {
-            margin: auto;
-            display: block;
-            width: 90%;
-
-            & > .ctaWrapper {
-                display: block;
-                margin-top: 16px;
-                text-align: center;
-
-                a.secondaryButton {
-                    padding: 1rem 2rem;
-                    background: #0C0D10;
-                    border: 1px solid #217960;
-                    color: #fff;
-                    width: auto;
-                    display: block;
-                    margin-top: 16px;
-                }
-
-                a.primaryButton {
-                    margin: 0;
-                    display: block;
-                    max-width: 100%;
-                }
-            }
-
-            .notMobile.viewProgram {
-                display: none;
-            }
-
-            .bookInfo {
-                display: block;
-                text-align: center;
-
-                p {
-                    color: #020204;
-                    padding: 0;
-                    background: #F1F1F1;
-                    border: 1px solid #217960;
-                    padding: 16px;
-                    margin-bottom: 0;
-                }
-
-                .primaryButton.notMobile {
-                    display: none;
-                }
-
-            }
-
+        p {
+          font-size: 12px;
         }
+      }
+
+      .gadgets {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url("../../images/eventPage/galleryImg_Gadgets.png");
+      }
+
+      .students {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url("../../images/eventPage/galleryImg_Student.png");
+      }
+
+      .lunch {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url("../../images/eventPage/galleryImg_Lunch.png");
+      }
+
+      .events {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url("../../images/eventPage/galleryImg_Events.png");
+      }
     }
-
-    .event_Section {
-
-        .eventsWrapper {
-            display: block;
-            padding: 0 24px;
-            margin-top: 40px;
-            // grid-template-columns: repeat(4, 1fr);
-            // gap: 20px;
-            // row-gap: 48px;
-            // margin: 64px 80px;
-
-            .eventCard {
-                border-radius: 8px;
-                background: #0C0D10;
-                margin-top: 24px;
-
-                img {
-                    width: 100%;
-                }
-
-                .eventDetails {
-                    display: flex;
-                    padding: 16px;
-
-                    .event_cardDate {
-
-                        span {
-                            font-family: 'Mona-Sans-MediumWide';
-                            font-size: 14px;
-                            color: #217960;
-                        }
-                    }
-
-                    .event_Info {
-
-                        margin-left: 12px;
-
-                        h5 {
-                            font-size: 14px;
-                            color: #F1F1F1;
-                            line-height: 20px;
-                            margin: 0;
-                            width: 100%;
-                        }
-                        p {
-                            font-weight: 400;
-                            font-size: 12px;
-                            margin: 12px 0 18px;
-                            line-height: 130%;
-                            letter-spacing: 0.02em;
-                            color: #A1A1AA;
-                        }
-
-                        a.viewProgram {
-                            font-size: 12px;
-                            text-decoration-line: underline;
-                            color: rgb(255, 255, 255);
-                            
-                            svg {
-                                margin-left: 12px;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-
-    .testimonial_Section {
-        margin-top: 104px;
-        height: auto;
-
-        .contentWrapper {
-            margin: auto;
-            text-align: center;
-        }
-
-        .testimonialWrapper {
-            display: block;
-
-            .testCard {
-
-                background: #0C0D10;
-                border: 1px solid #231F20;
-                max-width: 412px;
-                padding: 32px;
-                margin-top: 24px;
-
-                .testifier {
-                    display: flex;
-                    align-items: center;
-
-                    span {
-                        margin-left: 16px;
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-family: 'Mona-Sans-MediumWide';
-                        color: #217960;
-                    }
-                }
-
-                .testifier_message {
-                    margin-top: 24px;
-                    p {
-                        margin-bottom: 16px;
-                        font-size: 14px;
-                        line-height: 24px;
-                        color: #A5ACAF;
-                    }
-
-                    span {
-                        font-size: 12px;
-                        background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        text-fill-color: transparent;
-                    }
-                }
-            }
-        }
-    }
-
-    .gallery_Section {
-        margin-top: 104px;
-
-        .galleryWrapper {
-            margin-top: 40px;
-            display: block;
-
-            div {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Office.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-start;
-                padding: 18px;
-                height: 346px;
-                margin-top: 24px;
-
-                h5 {
-                    font-size: 24px;
-                    line-height: 17px;
-                    color: #E4E4E7;
-                    margin-bottom: 8px;
-                }
-
-                p {
-                    font-size: 12px;
-                }
-            }
-
-            .gadgets {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Gadgets.png');
-            }
-
-            .students {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Student.png');
-            }
-
-            .lunch {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Lunch.png');
-            }
-
-            .events {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Events.png');
-            }
-
-
-        }
-
-    }
-
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .eventsWrapper {
-    
-        .event_Section {
-    
-            .eventsWrapper {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 24px;
-                row-gap: 24px;
-                margin: 64px 40px;
-                padding: 0;
-    
-                .eventCard {
-                    border-radius: 8px;
-                    background: #0C0D10;
-    
-                    img {
-                        width: 100%;
-                    }
-    
-                    .eventDetails {
-                        display: flex;
-                        padding: 16px;
-    
-                        .event_cardDate {
-    
-                            span {
-                                font-family: 'Mona-Sans-MediumWide';
-                                font-size: 14px;
-                                color: #217960;
-                            }
-                        }
-    
-                        .event_Info {
-    
-                            margin-left: 12px;
-    
-                            h5 {
-                                font-size: 14px;
-                                color: #F1F1F1;
-                                line-height: 20px;
-                                margin: 0;
-                                width: 100%;
-                            }
-                            p {
-                                font-weight: 400;
-                                font-size: 12px;
-                                margin: 12px 0 18px;
-                                line-height: 130%;
-                                letter-spacing: 0.02em;
-                                color: #A1A1AA;
-                            }
-    
-                            a.viewProgram {
-                                font-size: 12px;
-                                text-decoration-line: underline;
-                                color: rgb(255, 255, 255);
-                                
-                                svg {
-                                    margin-left: 12px;
-                                }
-                            }
-                        }
-                    }
-    
-                }
+  .eventsWrapper {
+    .event_Section {
+      .eventsWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        row-gap: 24px;
+        margin: 64px 40px;
+        padding: 0;
+
+        .eventCard {
+          border-radius: 8px;
+          background: #0c0d10;
+
+          img {
+            width: 100%;
+          }
+
+          .eventDetails {
+            display: flex;
+            padding: 16px;
+
+            .event_cardDate {
+              span {
+                font-family: "Mona-Sans-MediumWide";
+                font-size: 14px;
+                color: #217960;
+              }
             }
+
+            .event_Info {
+              margin-left: 12px;
+
+              h5 {
+                font-size: 14px;
+                color: #f1f1f1;
+                line-height: 20px;
+                margin: 0;
+                width: 100%;
+              }
+              p {
+                font-weight: 400;
+                font-size: 12px;
+                margin: 12px 0 18px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: #a1a1aa;
+              }
+
+              a.viewProgram {
+                font-size: 12px;
+                text-decoration-line: underline;
+                color: rgb(255, 255, 255);
+
+                svg {
+                  margin-left: 12px;
+                }
+              }
+            }
+          }
         }
-    
-        .testimonial_Section {
-            margin-top: 184px;
-            height: auto;
-    
-            .contentWrapper {
-                margin: auto;
-                text-align: center;
-            }
-    
-            .testimonialWrapper {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 32px;
-    
-                .testCard {
-    
-                    background: #0C0D10;
-                    border: 1px solid #231F20;
-                    max-width: 412px;
-                    padding: 32px;
-                    margin-top: 0px;
-    
-                    .testifier {
-                        display: flex;
-                        align-items: center;
-    
-                        span {
-                            margin-left: 16px;
-                            font-size: 18px;
-                            line-height: 24px;
-                            font-family: 'Mona-Sans-MediumWide';
-                            color: #217960;
-                        }
-                    }
-    
-                    .testifier_message {
-                        margin-top: 24px;
-                        p {
-                            margin-bottom: 16px;
-                            font-size: 14px;
-                            line-height: 24px;
-                            color: #A5ACAF;
-                        }
-    
-                        span {
-                            font-size: 12px;
-                            background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-clip: text;
-                            text-fill-color: transparent;
-                        }
-                    }
-                }
-            }
-        }
-    
-        .gallery_Section {
-            margin-top: 140px;
-    
-            .galleryWrapper {
-                margin-top: 40px;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2, 280px);
-                gap: 20px;
-    
-                div {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Office.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: flex-start;
-                    padding: 18px;
-                    height: auto;
-                    margin: 0;
-    
-                    h5 {
-                        font-size: 16px;
-                        line-height: 17px;
-                        color: #E4E4E7;
-                        margin-bottom: 8px;
-                    }
-    
-                    p {
-                        font-size: 10px;
-                    }
-                }
-    
-                .office {
-                    grid-row: 1 / 3; /* Start at row 2 and end at row 4 */
-                    grid-column: 1 / 3; /* Start at column 2 and end at column 4 */
-                    padding: 40px;
-                    
-                    h5 {
-                        font-size: 44px;
-                        line-height: 48px;
-                        color: #E4E4E7;
-                        margin-bottom: 8px;
-                    }
-    
-                    p {
-                        font-size: 18px;
-                    }
-                }
-    
-                .gadgets {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Gadgets.png');
-                }
-    
-                .students {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Student.png');
-                }
-    
-                .lunch {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Lunch.png');
-                }
-    
-                .events {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url('../../images/eventPage/galleryImg_Events.png');
-                }
-    
-    
-            }
-    
-        }
-    
+      }
     }
+
+    .testimonial_Section {
+      margin-top: 184px;
+      height: auto;
+
+      .contentWrapper {
+        margin: auto;
+        text-align: center;
+      }
+
+      .testimonialWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+
+        .testCard {
+          background: #0c0d10;
+          border: 1px solid #231f20;
+          max-width: 412px;
+          padding: 32px;
+          margin-top: 0px;
+
+          .testifier {
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 16px;
+              font-size: 18px;
+              line-height: 24px;
+              font-family: "Mona-Sans-MediumWide";
+              color: #217960;
+            }
+          }
+
+          .testifier_message {
+            margin-top: 24px;
+            p {
+              margin-bottom: 16px;
+              font-size: 14px;
+              line-height: 24px;
+              color: #a5acaf;
+            }
+
+            span {
+              font-size: 12px;
+              background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .gallery_Section {
+      margin-top: 140px;
+
+      .galleryWrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 280px);
+        gap: 20px;
+
+        div {
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.9) 100%
+            ),
+            url("../../images/eventPage/galleryImg_Office.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          padding: 18px;
+          height: auto;
+          margin: 0;
+
+          h5 {
+            font-size: 16px;
+            line-height: 17px;
+            color: #e4e4e7;
+            margin-bottom: 8px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+
+        .office {
+          grid-row: 1 / 3; /* Start at row 2 and end at row 4 */
+          grid-column: 1 / 3; /* Start at column 2 and end at column 4 */
+          padding: 40px;
+
+          h5 {
+            font-size: 44px;
+            line-height: 48px;
+            color: #e4e4e7;
+            margin-bottom: 8px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+
+        .gadgets {
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.9) 100%
+            ),
+            url("../../images/eventPage/galleryImg_Gadgets.png");
+        }
+
+        .students {
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.9) 100%
+            ),
+            url("../../images/eventPage/galleryImg_Student.png");
+        }
+
+        .lunch {
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.9) 100%
+            ),
+            url("../../images/eventPage/galleryImg_Lunch.png");
+        }
+
+        .events {
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.9) 100%
+            ),
+            url("../../images/eventPage/galleryImg_Events.png");
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-    .eventsWrapper {
-        .talentHunt_Section {
-            // height: 80vh;
+  .eventsWrapper {
+    .talentHunt_Section {
+      // height: 80vh;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      background: linear-gradient(
+          183.49deg,
+          rgba(0, 0, 0, 0) 2.87%,
+          rgba(0, 0, 0, 0.9) 50.04%
+        ),
+        url("../../images/eventPage/becomeParticipantEvent.png");
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      .contentWrapper {
+        text-align: left;
+        padding: 0 0 40px 80px;
+        margin: unset;
+
+        & > p {
+          margin-bottom: 24px;
+        }
+      }
+
+      .booking {
+        margin: 0 0 80px 80px;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+
+        .ctaWrapper.mobile {
+          display: none;
+        }
+
+        .notMobile.viewProgram {
+          display: flex;
+          background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          text-decoration-line: underline;
+
+          svg {
+            margin-left: 16px;
+          }
+        }
+
+        .bookInfo {
+          display: flex;
+
+          p {
+            color: #020204;
             padding: 0;
-            margin: 0;
+            background: #f1f1f1;
+            border: 1px solid #217960;
+            padding: 16px;
+            margin-bottom: 0;
+          }
+
+          .primaryButton.notMobile {
             display: flex;
-            background: linear-gradient(183.49deg, rgba(0, 0, 0, 0) 2.87%, rgba(0, 0, 0, 0.9) 50.04%), url('../../images/eventPage/becomeParticipantEvent.png');
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-    
-            .contentWrapper {
-                text-align: left;
-                padding: 0 0 40px 80px;
-                margin: unset;
-    
-                & > p {
-                    margin-bottom: 24px;
-                }
-            }
-    
-            .booking {
-                margin: 0 0 80px 80px;
-                display: flex;
-                align-items: center;
-                width: 90%;
-                justify-content: space-between;
-
-                .ctaWrapper.mobile {
-                    display: none;
-                }
-    
-                .notMobile.viewProgram {
-                    display: flex;
-                    background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                    text-decoration-line: underline;
-    
-                    svg {
-                        margin-left: 16px;
-                    }
-                }
-    
-                .bookInfo {
-                    display: flex;
-    
-                    p {
-                        color: #020204;
-                        padding: 0;
-                        background: #F1F1F1;
-                        border: 1px solid #217960;
-                        padding: 16px;
-                        margin-bottom: 0;
-                    }
-    
-                    .primaryButton.notMobile {
-                        display: flex;
-                        align-items: center;
-                    }
-    
-                }
-    
-            }
+            align-items: center;
+          }
         }
-
-        .event_Section {
-
-            .eventsWrapper {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 20px;
-                row-gap: 48px;
-                margin: 64px 80px;
-                padding: 0;
-            }
-        }
-
-        .testimonial_Section {
-    
-            .testimonialWrapper {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 32px;
-            }
-        }
+      }
     }
+
+    .event_Section {
+      .eventsWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        row-gap: 48px;
+        margin: 64px 80px;
+        padding: 0;
+      }
+    }
+
+    .testimonial_Section {
+      .testimonialWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+    }
+  }
 }

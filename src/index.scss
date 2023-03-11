@@ -1,41 +1,41 @@
 $base-font-size: 16px; // set the base font size to 16 pixels
 
 @font-face {
-  font-family: 'Mona-Sans';
-  src: url('/typography/Mona-Sans.woff2') format('woff2'),
-       url('/typography/Mona-Sans.woff') format('woff');
+  font-family: "Mona-Sans";
+  src: url("/typography/Mona-Sans.woff2") format("woff2"),
+    url("/typography/Mona-Sans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mona-Sans-Light';
-  src: url('/typography/Mona-Sans-Light.woff2') format('woff2'),
-       url('/typography/Mona-Sans-Light.woff') format('woff');
+  font-family: "Mona-Sans-Light";
+  src: url("/typography/Mona-Sans-Light.woff2") format("woff2"),
+    url("/typography/Mona-Sans-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mona-Sans-LightWide';
-  src: url('/typography/Mona-Sans-LightWide.woff2') format('woff2'),
-       url('/typography/Mona-Sans-LightWide.woff') format('woff');
+  font-family: "Mona-Sans-LightWide";
+  src: url("/typography/Mona-Sans-LightWide.woff2") format("woff2"),
+    url("/typography/Mona-Sans-LightWide.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mona-Sans-MediumWide';
-  src: url('/typography/Mona-Sans-MediumWide.woff2') format('woff2'),
-       url('/typography/Mona-Sans-MediumWide.woff') format('woff');
+  font-family: "Mona-Sans-MediumWide";
+  src: url("/typography/Mona-Sans-MediumWide.woff2") format("woff2"),
+    url("/typography/Mona-Sans-MediumWide.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mona-Sans-BoldWide';
-  src: url('/typography/Mona-Sans-BoldWide.woff2') format('woff2'),
-       url('/typography/Mona-Sans-BoldWide.woff') format('woff');
+  font-family: "Mona-Sans-BoldWide";
+  src: url("/typography/Mona-Sans-BoldWide.woff2") format("woff2"),
+    url("/typography/Mona-Sans-BoldWide.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -44,17 +44,17 @@ $base-font-size: 16px; // set the base font size to 16 pixels
   font-size: $base-font-size;
 }
 
-
 body {
   margin: 0;
-  font-family: 'Mona-Sans', sans-serif;
+  font-family: "Mona-Sans", sans-serif;
   background: #020204;
   color: #fff;
   position: relative;
 }
 
-h1,h2 {
-  font-family: 'Mona-Sans-BoldWide';
+h1,
+h2 {
+  font-family: "Mona-Sans-BoldWide";
   font-weight: 700;
   line-height: 122.9%;
   margin: 0;
@@ -66,17 +66,21 @@ h1,h2 {
 }
 
 h4 {
-  font-family: 'Mona-Sans-BoldWide';
+  font-family: "Mona-Sans-BoldWide";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   margin: 0;
   padding: 0;
+
+  span {
+    color: #00dc82;
+  }
 }
 
 h5 {
-  font-family: 'Mona-Sans-MediumWide';
+  font-family: "Mona-Sans-MediumWide";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -86,18 +90,19 @@ h5 {
 }
 
 h6 {
-  font-family: 'Mona-Sans-MediumWide';
+  font-family: "Mona-Sans-MediumWide";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 15px;
   margin: 0;
   padding: 0;
-
 }
 
-a, input, button {
-  font-family: 'Mona-Sans-LightWide';
+a,
+input,
+button {
+  font-family: "Mona-Sans-LightWide";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -106,7 +111,7 @@ a, input, button {
 }
 
 p {
-  font-family: 'Mona-Sans-Light';
+  font-family: "Mona-Sans-Light";
   font-style: lighter;
   font-weight: 300;
   font-size: 14px;
@@ -117,7 +122,12 @@ p {
   color: rgb(204, 204, 204);
 }
 
-textarea,select,ul,li,input,button {
+textarea,
+select,
+ul,
+li,
+input,
+button {
   all: initial;
 }
 
@@ -126,56 +136,59 @@ textarea,select,ul,li,input,button {
 // }
 
 @media only screen and (min-width: 600px) {
-  
-  h1,h2 {
+  h1,
+  h2 {
     font-weight: 700;
     font-size: 3rem;
     line-height: 122.9%;
     text-align: left;
     text-transform: uppercase;
   }
-  
+
   h4 {
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
   }
-  
+
   h5 {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 48px;
   }
-  
+
   h6 {
     font-weight: 700;
     font-size: 16px;
     line-height: 15px;
   }
-  
-  a, input {
+
+  a,
+  input {
     font-weight: 400;
     line-height: 15px;
   }
-  
+
   p {
     font-weight: 300;
     font-size: 1.125rem;
     line-height: 140%;
     letter-spacing: 0.02em;
+    font-size: 18px;
   }
 
-  a, input, button {
+  a,
+  input,
+  button {
     font-size: 16px;
   }
-  
 }
 
 @media only screen and (min-width: 1025px) {
-
-  h1,h2 {
+  h1,
+  h2 {
     font-weight: 700;
     font-size: 4rem;
   }
@@ -186,5 +199,4 @@ textarea,select,ul,li,input,button {
     font-size: 44px;
     line-height: 48px;
   }
-
 }

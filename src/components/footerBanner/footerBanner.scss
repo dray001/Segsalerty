@@ -1,39 +1,46 @@
 .becomeParticipant_Section {
-    height: 502px;
-    padding: 0;
-    margin: 48px 0 0 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/STS_Page/becomeParticipant.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+  margin-top: 40px;
+  height: 502px;
+  padding: 0;
+  margin: 48px 0 0 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 46.33%,
+      rgba(0, 0, 0, 0) 76.04%
+    ),
+    url("../../images/STS_Page/becomeParticipant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 
-    .contentWrapper {
-        padding: 24px;
-        margin-bottom: 0;
-    }
+  .contentWrapper {
+    padding: 24px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .becomeParticipant_Section {
-        padding: 0;
-        margin: 150px 0 0 0;
+  .becomeParticipant_Section {
+    padding: 0;
+    margin: 150px 0 0 0;
 
-        .contentWrapper {
-            padding: 0 0 40px 40px;
-        }
+    .contentWrapper {
+      padding: 0 0 40px 40px;
     }
+  }
 }
 
 @media screen and (min-width: 1025px) {
-    .becomeParticipant_Section {
-        height: 80vh;
-        margin: 150px 0 0 0;
+  .becomeParticipant_Section {
+    margin: 150px 0 0 0;
+    height: 100vh;
+    max-height: 1000px;
 
-        .contentWrapper {
-            padding: 0 0 80px 80px;
-        }
+    .contentWrapper {
+      padding: 0 0 80px 80px;
     }
+  }
 }

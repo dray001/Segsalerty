@@ -1,623 +1,641 @@
 .homePageWrapper {
-    .heroSection {
-        display: block;
-        background-image: url('../../images/landingPage/heroPageTexture.png');
+  overflow: hidden;
+  .heroSection {
+    display: block;
+    background-image: url("../../images/landingPage/heroPageTexture.png");
+    max-height: 1100px;
 
-        .contentWrapper {
-            span {
-                color: #0ADE93;
-            }
-            text-align: center;
+    .contentWrapper {
+      span {
+        color: #0ade93;
+      }
+      text-align: center;
+    }
+
+    .imageWrapper {
+      display: block;
+      margin-bottom: 48px;
+      img {
+        width: 348px;
+      }
+    }
+  }
+
+  .introSection {
+    height: 495px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 53.93%,
+        rgba(0, 0, 0, 0) 90.91%
+      ),
+      url("../../images/landingPage/bannerImg.png");
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/bannerImg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .contentWrapper {
+      padding: 0 0 16px 16px;
+    }
+  }
+
+  .programSection {
+    .imageWrapper {
+      height: 340px;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      .imageWrappeContent {
+        width: 60%;
+        padding: 0 0 16px 16px;
+
+        div {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 16px;
+
+          h6 {
+            margin-left: 8px;
+          }
         }
 
-        .imageWrapper {
+        p {
+          font-family: "Mona-Sans-Light";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          color: #f1f1f1;
+        }
+      }
+    }
+
+    .srs {
+      flex-direction: row-reverse;
+
+      .imageWrapper {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8) 46.33%,
+            rgba(0, 0, 0, 0) 76.04%
+          ),
+          url("../../images/landingPage/seg_Resources.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .sts {
+      .imageWrapper {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8) 46.33%,
+            rgba(0, 0, 0, 0) 76.04%
+          ),
+          url("../../images/landingPage/seg_TalentSupport.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .aboutUsSection {
+    .reasons {
+      display: block;
+
+      .reasons_card {
+        background: #0c0d10;
+        padding: 24px;
+        margin-top: 40px;
+
+        div {
+          display: flex;
+          align-items: center;
+
+          h5 {
+            font-family: "Mona-Sans-BoldWide";
+            font-size: 16px;
+            line-height: 140%;
+          }
+
+          img {
+            margin-right: 12px;
+            width: 72px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #a5acaf;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+
+    .ourMission {
+      .missionMetrics {
+        display: flex;
+        border: 1px solid #00dc82;
+        margin-top: 72px;
+
+        div {
+          padding: 16px;
+
+          h2 {
+            font-family: "Mona-Sans-LightWide";
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 0;
+            font-size: 32px;
+            line-height: 66px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: -0.02em;
+            color: #a1a1aa;
+          }
+
+          span {
+            font-family: "Mona-Sans-BoldtWide";
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+          }
+        }
+
+        & > div:not(:last-child) {
+          border-right: 1px solid #00dc82;
+        }
+      }
+    }
+
+    .logoWrapper {
+      white-space: nowrap;
+      overflow-x: auto;
+      .logoGroup {
+        display: flex;
+        margin-bottom: 40px;
+
+        .logoInstance {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 24px;
+          padding: 24px 24px 8px;
+          border: 1px solid #2c2c2c;
+          border-radius: 8px;
+
+          span {
             display: block;
-            margin-bottom: 48px;
-            img {
-                width: 348px;
-            }
+            font-size: 12px;
+            line-height: 14px;
+            // letter-spacing: -0.02em;
+            color: #555657;
+            margin-top: 8px;
+          }
         }
+      }
+    }
+  }
+
+  .socialProofSection {
+    .metrics {
+      background-color: #555657;
+      min-width: 30%;
+      padding: 40px;
+      background: rgba(2, 2, 4, 0.7);
+      border: 1px solid #212123;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        padding-bottom: 8px;
+        margin-bottom: 64px;
+        border-bottom: 1px solid white;
+      }
+
+      span {
+        color: #fbff42;
+      }
+    }
+
+    .membersThoughts {
+      .testimonies {
+        display: block;
+
+        .testimony {
+          // max-width: 30%;
+
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-indent: 6.54688px;
+            color: #a5acaf;
+          }
+
+          .author {
+            display: flex;
+            align-items: center;
+            margin-top: 24px;
+
+            div {
+              margin-left: 16px;
+
+              span {
+                display: block;
+                font-family: "Mona-Sans-MediumWide";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #a1a1aa;
+
+                &:first-child {
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: #217960;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .homePageWrapper {
+    .heroSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top right;
+      height: calc(100vh - 131px);
+      max-height: 900px;
+
+      .imageWrapper {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+
+        img {
+          width: 280px;
+        }
+      }
+
+      .contentWrapper {
+        text-align: left;
+      }
     }
 
     .introSection {
-        height: 495px;
-        padding: 0;
+      height: 60vh;
+      padding: 0;
+      margin: 40px 40px 0 40px;
+
+      .contentWrapper {
+        padding: 0 0 40px 40px;
         margin: 0;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 53.93%, rgba(0, 0, 0, 0) 90.91%), url('../../images/landingPage/bannerImg.png');
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/bannerImg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
+      }
+    }
+
+    .programSection {
+      .should_Flex {
+        .contentWrapper {
+          width: 60%;
+        }
+      }
+
+      .imageWrapper {
+        height: 344px;
+        width: 223px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
 
-        .contentWrapper {
-            padding: 0 0 16px 16px;
-        }
-    }
+        .imageWrappeContent {
+          width: 60%;
+          padding: 0 0 32px 32px;
 
-    .programSection {
-
-         .imageWrapper{
-
-            height: 340px;
-            width: auto;
+          div {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
+            align-items: flex-end;
+            margin-bottom: 16px;
 
-            .imageWrappeContent {
-                width: 60%;
-                padding: 0 0 16px 16px;
-
-                div {
-                    display: flex;
-                    align-items: flex-end;
-                    margin-bottom: 16px;
-                    
-
-                    h6 {
-                        margin-left: 8px;
-                    }
-                }
-
-                p {
-                    font-family: 'Mona-Sans-Light';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 14px;
-                    color: #F1F1F1;
-                }
-            }   
-        }
-
-        .srs {
-            flex-direction: row-reverse;
-
-            .imageWrapper {
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/seg_Resources.png');
-                background-size: cover;
-                background-repeat: no-repeat;
+            h6 {
+              margin-left: 8px;
             }
-        }
-            
-        .sts {
-            .imageWrapper {
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/seg_TalentSupport.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
+          }
 
+          p {
+            font-family: "Mona-Sans-Light";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: #f1f1f1;
+          }
+        }
+      }
+
+      .srs {
+        flex-direction: row-reverse;
+
+        .imageWrapper {
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.8) 46.33%,
+              rgba(0, 0, 0, 0) 76.04%
+            ),
+            url("../../images/landingPage/seg_Resources.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .sts {
+        .imageWrapper {
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.8) 46.33%,
+              rgba(0, 0, 0, 0) 76.04%
+            ),
+            url("../../images/landingPage/seg_TalentSupport.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
     }
 
     .aboutUsSection {
+      .reasons {
+        display: block;
 
-        .reasons {
-            display: block;
+        .reasons_card {
+          background: #0c0d10;
+          padding: 24px;
 
-            .reasons_card {
-                background: #0C0D10;
-                padding: 24px;
-                margin-top: 40px;
+          div {
+            display: flex;
+            align-items: center;
 
-                div {
-                    display: flex;
-                    align-items: center;
-
-                    h5 {
-                        font-family: 'Mona-Sans-BoldWide';
-                        font-size: 16px;
-                        line-height: 140%;
-                    }
-
-                    img {
-                        margin-right: 12px;
-                        width: 72px;
-                    }
-                }
-
-                p {
-                    font-size: 14px;
-                    color: #A5ACAF;
-                    line-height: 140%;
-                    letter-spacing: 0.02em;
-                }
+            h5 {
+              font-family: "Mona-Sans-BoldWide";
+              font-size: 16px;
+              line-height: 140%;
             }
-        }
 
-        .ourMission {
-
-            .missionMetrics {
-                display: flex;
-                border: 1px solid #00DC82;
-                margin-top: 72px;
-
-                div {
-                    padding: 16px;
-
-                    h2 {
-                        font-family: 'Mona-Sans-LightWide';
-                        font-style: normal;
-                        font-weight: 400;
-                        margin-bottom: 0;
-                        font-size: 32px;
-                        line-height: 66px;
-                    }
-
-                    p {
-                        font-size: 12px;
-                        line-height: 12px;
-                        letter-spacing: -0.02em;   
-                        color: #A1A1AA; 
-                    }
-
-                    span {
-                        font-family: 'Mona-Sans-BoldtWide';
-                        font-weight: bold;
-                        color: rgb(255, 255, 255);
-                    }
-                }
-
-                & > div:not(:last-child) {
-                border-right: 1px solid #00DC82;
-                }  
-
+            img {
+              margin-right: 12px;
+              width: 72px;
             }
+          }
+
+          p {
+            font-size: 14px;
+            color: #a5acaf;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+          }
         }
+      }
 
-        .logoWrapper {
-            white-space: nowrap;
-            overflow-x: auto;
-            .logoGroup {
-                display: flex;
-                margin-bottom: 40px;
+      .ourMission {
+        .missionMetrics {
+          display: flex;
+          border: 1px solid #00dc82;
+          margin-top: 72px;
 
-                .logoInstance {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-right: 24px;
-                    padding: 24px 24px 8px;
-                    border: 1px solid #2c2c2c;
-                    border-radius: 8px;
+          div {
+            padding: 64px;
 
-                    span {
-                        display: block;
-                        font-size: 12px;
-                        line-height: 14px;
-                        // letter-spacing: -0.02em;   
-                        color: #555657;
-                        margin-top: 8px;
-                    }
-                }
+            h2 {
+              font-family: "Mona-Sans-LightWide";
+              font-style: normal;
+              font-weight: 400;
+              margin-bottom: 0;
+              font-size: 60px;
+              line-height: 66px;
             }
-        }
-    }
 
-    .socialProofSection {
-
-        .metrics {
-            background-color: #555657;
-            min-width: 30%;
-            padding: 40px;
-            background: rgba(2, 2, 4, 0.7);
-            border: 1px solid #212123;
             p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                letter-spacing: 0.02em;
-                padding-bottom: 8px;
-                margin-bottom: 64px;
-                border-bottom: 1px solid white;
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: -0.02em;
+              color: #a1a1aa;
             }
 
             span {
-               color: #FBFF42;
+              font-family: "Mona-Sans-BoldtWide";
+              font-weight: bold;
+              color: rgb(255, 255, 255);
             }
+          }
+
+          & > div:not(:last-child) {
+            border-right: 1px solid #00dc82;
+          }
         }
+      }
 
-        .membersThoughts {
-            .testimonies {
-                display: block;
+      .logoWrapper {
+        .logoGroup {
+          display: flex;
+          margin-bottom: 40px;
 
-                .testimony {
-                    // max-width: 30%;
-
-                    p {
-                        font-size: 14px;
-                        line-height: 24px;
-                        letter-spacing: 0.02em;
-                        text-indent: 6.54688px;
-                        color: #A5ACAF;
-                    }
-
-                    .author {
-                        display: flex;
-                        align-items: center;
-                        margin-top: 24px;
-
-                        div {
-                            margin-left: 16px;
-
-                            span {
-                                display: block;
-                                font-family: 'Mona-Sans-MediumWide';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 13px;
-                                line-height: 20px;
-                                color: #A1A1AA;
-
-                                &:first-child {
-                                    font-size: 14px;
-                                    line-height: 24px;
-                                    color: #217960;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .homePageWrapper {
-        .heroSection {
+          .logoInstance {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: top right;
-    
-            .imageWrapper {
-                display: flex;
-                width: 40%;
-                justify-content: center;
+            margin-right: 24px;
+            padding: 24px 24px 8px;
+            border: 1px solid #2c2c2c;
+            border-radius: 8px;
 
-                img {
-                    width: 280px;
-                }
+            span {
+              display: block;
+              font-size: 12px;
+              line-height: 14px;
+              // letter-spacing: -0.02em;
+              color: #555657;
+              margin-top: 8px;
             }
-
-            .contentWrapper {
-                text-align: left;
-            }
+          }
         }
-    
-        .introSection {
-            height: 60vh;
-            padding: 0;
-            margin: 40px 40px 0 40px;
-    
-            .contentWrapper {
-                padding: 0 0 40px 40px;
-                margin: 0;
-            }
-        }
-    
-        .programSection {
-
-            .should_Flex {
-                .contentWrapper {
-                    width: 60%;
-                }
-            }
-    
-             .imageWrapper {
-    
-                height: 344px;
-                width: 223px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-start;
-    
-                .imageWrappeContent {
-                    width: 60%;
-                    padding: 0 0 32px 32px;
-    
-                    div {
-                        display: flex;
-                        align-items: flex-end;
-                        margin-bottom: 16px;
-                        
-    
-                        h6 {
-                            margin-left: 8px;
-                        }
-                    }
-    
-                    p {
-                        font-family: 'Mona-Sans-Light';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 14px;
-                        color: #F1F1F1;
-                    }
-                }   
-            }
-    
-            .srs {
-                flex-direction: row-reverse;
-    
-                .imageWrapper {
-                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/seg_Resources.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-                
-            .sts {
-                .imageWrapper {
-                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 46.33%, rgba(0, 0, 0, 0) 76.04%), url('../../images/landingPage/seg_TalentSupport.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-    
-        }
-    
-        .aboutUsSection {
-    
-            .reasons {
-                display: block;
-    
-                .reasons_card {
-                    background: #0C0D10;
-                    padding: 24px;
-    
-                    div {
-                        display: flex;
-                        align-items: center;
-    
-                        h5 {
-                            font-family: 'Mona-Sans-BoldWide';
-                            font-size: 16px;
-                            line-height: 140%;
-                        }
-    
-                        img {
-                            margin-right: 12px;
-                            width: 72px;
-                        }
-                    }
-    
-                    p {
-                        font-size: 14px;
-                        color: #A5ACAF;
-                        line-height: 140%;
-                        letter-spacing: 0.02em;
-                    }
-                }
-            }
-    
-            .ourMission {
-    
-                .missionMetrics {
-                    display: flex;
-                    border: 1px solid #00DC82;
-                    margin-top: 72px;
-    
-                    div {
-                        padding: 64px;
-    
-                        h2 {
-                            font-family: 'Mona-Sans-LightWide';
-                            font-style: normal;
-                            font-weight: 400;
-                            margin-bottom: 0;
-                            font-size: 60px;
-                            line-height: 66px;
-                        }
-    
-                        p {
-                            font-size: 18px;
-                            line-height: 28px;
-                            letter-spacing: -0.02em;   
-                            color: #A1A1AA; 
-                        }
-    
-                        span {
-                            font-family: 'Mona-Sans-BoldtWide';
-                            font-weight: bold;
-                            color: rgb(255, 255, 255);
-                        }
-                    }
-    
-                    & > div:not(:last-child) {
-                    border-right: 1px solid #00DC82;
-                    }  
-    
-                }
-            }
-    
-            .logoWrapper {
-                .logoGroup {
-                    display: flex;
-                    margin-bottom: 40px;
-    
-                    .logoInstance {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin-right: 24px;
-                        padding: 24px 24px 8px;
-                        border: 1px solid #2c2c2c;
-                        border-radius: 8px;
-    
-                        span {
-                            display: block;
-                            font-size: 12px;
-                            line-height: 14px;
-                            // letter-spacing: -0.02em;   
-                            color: #555657;
-                            margin-top: 8px;
-                        }
-                    }
-                }
-            }
-        }
-    
-        .socialProofSection {
-
-            .successStories {
-                display: block;
-
-                .contentWrapper {
-                    width: auto;
-                    max-width: auto;
-                }
-            }
-    
-            .metrics {
-                background-color: #555657;
-                min-width: 30%;
-                padding: 40px;
-                background: rgba(2, 2, 4, 0.7);
-                border: 1px solid #212123;
-                p {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 24px;
-                    letter-spacing: 0.02em;
-                    padding-bottom: 8px;
-                    margin-bottom: 64px;
-                    border-bottom: 1px solid white;
-                }
-    
-                span {
-                   color: #FBFF42;
-                }
-            }
-    
-            .membersThoughts {
-                .testimonies {
-                    display: flex;
-                    justify-content: space-between;
-    
-                    .testimony {
-                        // margin-right: 48px;
-                        max-width: 30%;
-    
-                        p {
-                            font-size: 14px;
-                            line-height: 24px;
-                            letter-spacing: 0.02em;
-                            text-indent: 6.54688px;
-                            color: #A5ACAF;
-                        }
-    
-                        .author {
-                            display: flex;
-                            align-items: center;
-                            margin-top: 24px;
-    
-                            div {
-                                margin-left: 16px;
-    
-                                span {
-                                    display: block;
-                                    font-family: 'Mona-Sans-MediumWide';
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 13px;
-                                    line-height: 20px;
-                                    color: #A1A1AA;
-    
-                                    &:first-child {
-                                        font-size: 14px;
-                                        line-height: 24px;
-                                        color: #217960;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .socialProofSection {
+      .successStories {
+        display: block;
+
+        .contentWrapper {
+          width: auto;
+          max-width: auto;
+        }
+      }
+
+      .metrics {
+        background-color: #555657;
+        min-width: 30%;
+        padding: 40px;
+        background: rgba(2, 2, 4, 0.7);
+        border: 1px solid #212123;
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          letter-spacing: 0.02em;
+          padding-bottom: 8px;
+          margin-bottom: 64px;
+          border-bottom: 1px solid white;
+        }
+
+        span {
+          color: #fbff42;
+        }
+      }
+
+      .membersThoughts {
+        .testimonies {
+          display: flex;
+          justify-content: space-between;
+
+          .testimony {
+            // margin-right: 48px;
+            max-width: 30%;
+
+            p {
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.02em;
+              text-indent: 6.54688px;
+              color: #a5acaf;
+            }
+
+            .author {
+              display: flex;
+              align-items: center;
+              margin-top: 24px;
+
+              div {
+                margin-left: 16px;
+
+                span {
+                  display: block;
+                  font-family: "Mona-Sans-MediumWide";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 20px;
+                  color: #a1a1aa;
+
+                  &:first-child {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #217960;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-    .homePageWrapper {
-        .heroSection {
+  .homePageWrapper {
+    .heroSection {
+      max-width: unset;
 
-            .imageWrapper {
-                display: flex;
-                width: 40%;
-                justify-content: center;
+      .heroSectionInner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .imageWrapper {
+        display: flex;
+        width: 40%;
+        justify-content: center;
 
-                img {
-                    width: auto;
-                }
-            }
-
+        img {
+          width: auto;
         }
+      }
 
-        .introSection {
-            height: 80vh;
-            padding: 0;
-            margin: 0 80px;
-    
-            .contentWrapper {
-                padding: 0 0 48px 48px;
-            }
-        }
-
-        .programSection {
-
-            .imageWrapper {
-                height: 544px;
-                width: 523px;
-            }
-
-            .should_Flex {
-                .contentWrapper {
-                    width: 50%;
-                }
-            }
-        }
-
-        .aboutUsSection {
-            .reasons {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 48px;
-                justify-items: center;
-                align-items: center;
-
-                .reasons_card {
-
-                    div {
-                        display: flex;
-                        align-items: center;
-                    }
-
-                }
-
-            }
-        }
-
-        .socialProofSection {
-            
-            .successStories {
-                display: flex;
-
-                .contentWrapper {
-                    // width: auto;
-                    max-width: 45%;
-                }
-            }
-        }
-
+      .heroDescription {
+        max-width: 536px;
+      }
     }
+
+    .introSection {
+      width: 100%;
+      height: 80vh;
+      max-height: 720px;
+      padding: 0 80px;
+
+      .contentWrapper {
+        padding: 0 0 48px 48px;
+      }
+    }
+
+    .programSection {
+      .imageWrapper {
+        height: 544px;
+        width: 523px;
+      }
+
+      .should_Flex {
+        .contentWrapper {
+          width: 50%;
+        }
+      }
+    }
+
+    .aboutUsSection {
+      .reasons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        justify-items: center;
+        align-items: center;
+
+        .reasons_card {
+          div {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .socialProofSection {
+      .successStories {
+        display: flex;
+
+        .contentWrapper {
+          // width: auto;
+          max-width: 45%;
+        }
+      }
+    }
+  }
 }
