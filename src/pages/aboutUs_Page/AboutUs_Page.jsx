@@ -344,7 +344,7 @@ let expertise = (
 
 const AboutUs = () => {
   return (
-    <div className="aboutUsWrapper ">
+    <div className="aboutUsWrapper desktopMaxWidth">
       <section className="client_Section">
         <div className="contentWrapper">
           <h1> Our 100k talent mission: </h1>

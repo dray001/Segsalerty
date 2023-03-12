@@ -131,7 +131,7 @@ let iconStep_3 = (
 
 const HireUs = () => {
   return (
-    <div className="hireUsWrapper ">
+    <div className="hireUsWrapper desktopMaxWidth ">
       <section className="client_Section">
         <div className="contentWrapper">
           <h1> Become a client </h1>

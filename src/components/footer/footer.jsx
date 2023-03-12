@@ -46,7 +46,7 @@ let SocialIconClass = ({ url, image }) => (
 
 const Footer = () => {
   return (
-    <footer className="footer desktopMaxWidth">
+    <footer className="footer">
       <div className="footerWrapper">
         <img src={footerLogo} alt="" />
 

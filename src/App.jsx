@@ -42,8 +42,8 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/sts" element={<STSPage />} />
           <Route exact path="/events" element={<Events />} />
-          <Route exact path="/hireUs" element={<HireUs />} />
-          <Route exact path="/aboutUs" element={<AboutUs />} />
+          <Route exact path="/hire-us" element={<HireUs />} />
+          <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/register" element={<Reg />} />
         </Routes>
       </main>

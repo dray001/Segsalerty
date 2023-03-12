@@ -59,11 +59,14 @@ let list = () => {
 
 const HomePage = () => {
   return (
-    <div className="homePageWrapper">
+    <div className="homePageWrapper desktopMaxWidth">
       <section className="heroSection section_flex">
-        <div className="heroSectionInner desktopMaxWidth">
+        <div className="heroSectionInner ">
           <div className="contentWrapper">
-            <h1 dangerouslySetInnerHTML={{ __html: heroSection.heading }} />
+            <h1
+              dangerouslySetInnerHTML={{ __html: heroSection.heading }}
+              style={{ maxWidth: 734 }}
+            />
             <p className="heroDescription">{heroSection.para}</p>
             <div className="ctaWrapper">
               <a className="primaryButton" href={heroSection.url[0]}>
@@ -81,7 +84,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="introSection desktopMaxWidth">
+      <section className="introSection ">
         <div className="contentWrapper">
           <h4 dangerouslySetInnerHTML={{ __html: introSection.heading }} />
           <p>{introSection.para}</p>
@@ -110,7 +113,7 @@ const HomePage = () => {
       <section className="programSection section_with_subSections">
         <h5 className="sectionLabel">{programSection.label}</h5>
 
-        <div className="srs should_Flex desktopMaxWidth">
+        <div className="srs should_Flex ">
           <div className="contentWrapper">
             <h4
               dangerouslySetInnerHTML={{
@@ -146,7 +149,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="sts should_Flex desktopMaxWidth">
+        <div className="sts should_Flex ">
           <div className="contentWrapper">
             <h4
               dangerouslySetInnerHTML={{
@@ -186,7 +189,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="aboutUsSection section_with_subSections desktopMaxWidth">
+      <section className="aboutUsSection section_with_subSections ">
         <h5 className="sectionLabel">{aboutUsSection.label}</h5>
 
         <div className=" should_stack">
@@ -274,7 +277,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="socialProofSection section_with_subSections desktopMaxWidth">
+      <section className="socialProofSection section_with_subSections ">
         <h5 className="sectionLabel">{socialProofSection.label}</h5>
 
         <div className="successStories should_Flex">

@@ -28,6 +28,8 @@
       display: block;
       margin: auto;
       text-align: center;
+      color: #041712;
+      font-weight: 600;
     }
 
     ul {
@@ -39,6 +41,7 @@
         margin: 24px auto;
         text-align: center;
         display: block;
+
         a {
           color: #f1f1f1;
           font-size: 18px;
@@ -46,8 +49,13 @@
           &:hover {
             text-decoration: underline;
             background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
-            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+
+          &.active {
+            color: #00dc82;
+            font-weight: 600;
+            text-decoration: underline;
           }
         }
       }
@@ -158,6 +166,7 @@
         padding: 1rem 2rem;
         background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
         color: #041712;
+        font-weight: 600;
       }
 
       ul {
@@ -176,9 +185,12 @@
 
             &:hover {
               text-decoration: underline;
-              background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+            }
+
+            &.active {
+              color: #00dc82;
+              font-weight: 600;
+              text-decoration: underline;
             }
           }
         }

@@ -143,8 +143,8 @@ let iconStep_3 = (
 
 const STS_Page = () => {
   return (
-    <div className="STS_PageWrapper ">
-      <section className="heroSection section_flex desktopMaxWidth">
+    <div className="STS_PageWrapper desktopMaxWidth">
+      <section className="heroSection section_flex ">
         <div className="contentWrapper">
           <h1>
             Segsalerty <span>talent support</span> initiative
@@ -168,7 +168,7 @@ const STS_Page = () => {
         </div>
       </section>
 
-      <section className="strategySection section_with_subSections desktopMaxWidth">
+      <section className="strategySection section_with_subSections ">
         <h5 className="sectionLabel">What we do</h5>
 
         <div className="DSL_strategy should_stack">
@@ -269,7 +269,7 @@ const STS_Page = () => {
       <section className="openSlotSection section_with_subSections">
         <h5 className="sectionLabel">Open slots for registration</h5>
 
-        <div className="frontEnd should_Flex desktopMaxWidth">
+        <div className="frontEnd should_Flex ">
           <div className="contentWrapper">
             <h4> Frontend developers </h4>
             <p>
@@ -290,7 +290,7 @@ const STS_Page = () => {
           </div>
         </div>
 
-        <div className="productDesign should_Flex desktopMaxWidth">
+        <div className="productDesign should_Flex ">
           <div className="contentWrapper">
             <h4> Product designers </h4>
             <p>
@@ -311,7 +311,7 @@ const STS_Page = () => {
           </div>
         </div>
 
-        <div className="backEnd should_Flex desktopMaxWidth">
+        <div className="backEnd should_Flex ">
           <div className="contentWrapper">
             <h4> Backend engineers </h4>
             <p>
@@ -335,7 +335,7 @@ const STS_Page = () => {
 
       <section className="admission_process_Section section_with_subSections">
         <h5 className="sectionLabel">How the admission process works</h5>
-        <div className="processWrapper should_Flex desktopMaxWidth">
+        <div className="processWrapper should_Flex ">
           <div className="steps">
             <div className="step">
               <h2> 01 </h2>

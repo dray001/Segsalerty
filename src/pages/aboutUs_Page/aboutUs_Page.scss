@@ -1,708 +1,692 @@
 .aboutUsWrapper {
+  .titleSlash {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .titleSlash {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
+    span {
+      content: "";
+      top: 50%;
+      height: 2px;
+      width: 100%;
+      background: #000;
+    }
+
+    h4 {
+      min-width: 164px;
+      padding-right: 20px;
+    }
+  }
+
+  .client_Section {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+        228.34deg,
+        rgba(0, 0, 0, 0) 39.29%,
+        rgba(0, 0, 0, 0.8) 72.21%
+      ),
+      url("../../images/aboutUsPage/talentMission.png");
+    background-position: center;
+    background-size: cover;
+
+    .contentWrapper {
+      padding: 88px 24px;
+      margin: 0;
+      text-align: center;
+
+      & > p {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .aboutUs_Section {
+    height: auto;
+    background: #f1f1f1;
+    color: #000;
+    padding: 40px 24px;
+
+    & > div {
+      // margin: 80px 92px;
+      .contentWrapper {
+        margin-left: auto;
+        margin-top: 32px;
+
+        h5 {
+          font-size: 24px;
+          line-height: 140%;
+        }
+
+        p {
+          color: #000;
+        }
+
+        a.secondaryButton {
+          background: #e4e4e7;
+          color: #020204;
+        }
+      }
+    }
+
+    & > div:last-child {
+      margin-top: 48px;
+
+      .titleSlash {
         span {
-            content: '';
-            top: 50%;
-            height: 2px;
-            width: 100%;
-            background: #000;
+          width: 20%;
         }
 
         h4 {
-            min-width: 164px;
-            padding-right: 20px;
+          min-width: 114px;
         }
-
+      }
     }
-    
-    .client_Section {
-        height: auto;
-        padding: 0;
-        margin: 0;
-        background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
-        background-position: center;
-        background-size: cover;
+  }
 
-        .contentWrapper {
-            padding: 88px 24px;
-            margin: 0;
-            text-align: center;
-
-            & > p {
-                margin-bottom: 24px;
-            }
-        }
-
+  .whatWeDoSection {
+    .imageWrapper {
+      display: none;
     }
 
-    .aboutUs_Section {
-        height: auto;
-        background: #F1F1F1;
-        color: #000;
-        padding: 40px 24px;
+    .listingWrapper {
+      & > div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
 
-        & > div {
-            // margin: 80px 92px;
-            .contentWrapper {
-            margin-left: auto;
-            margin-top: 32px;
-
-                h5 {
-                    font-size: 24px;
-                    line-height: 140%;
-                }
-
-                p {
-                    color: #000;
-                }
-                
-                a.secondaryButton {
-                    background: #E4E4E7;
-                    color: #020204;
-                }
-            } 
+        svg {
+          background: #0c0d10;
+          border: 1px solid #231f20;
+          padding: 8px;
+          margin-right: 12px;
         }
 
-        & > div:last-child {
-            margin-top: 48px;
-
-            .titleSlash {
-
-                span {
-                    width: 20%;
-                }
-
-                h4 {
-                    min-width: 114px;
-                }
-
-            }
-        }    
+        p {
+          margin: 0;
+        }
+      }
     }
 
-    .whatWeDoSection {
+    .vision {
+      margin-top: 64px;
+      display: block;
 
-        .imageWrapper {
-            display: none;
-        }
+      .contentWrapper {
+        width: auto;
+        margin-bottom: 0;
 
-        .listingWrapper {
-            & > div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 32px;
-
-                svg {
-                    background: #0C0D10;
-                    border: 1px solid #231F20;
-                    padding: 8px;
-                    margin-right: 12px;
-                }
-
-                p {
-                    margin: 0;
-                }
-            }
-        }
-
-        .vision {
-            margin-top: 64px;
+        .value {
+          .listingWrapper {
             display: block;
+            margin-top: 24px;
 
-            .contentWrapper {
-                width: auto;
-                margin-bottom: 0;
+            & > div {
+              margin-right: 24px;
+            }
+          }
+        }
 
-                .value {
+        .ratings {
+          & > div {
+            display: flex;
+            margin-top: 24px;
 
-                    .listingWrapper {
-                        display: block;
-                        margin-top: 24px;
-    
-                        & > div {
-                            margin-right: 24px;
-                        }
-                    }
-                }
-
-                .ratings {
-                    & > div {
-                        display: flex;
-                        margin-top: 24px;
-
-                        svg {
-                            margin-right: 8px;
-                        }
-
-                        p {
-                            margin: 0;
-                            display: inline;
-                            margin-right: 8px;
-                        }
-                    }
-                }
-
+            svg {
+              margin-right: 8px;
             }
 
+            p {
+              margin: 0;
+              display: inline;
+              margin-right: 8px;
+            }
+          }
         }
-      
-   }
+      }
+    }
+  }
 
-   .founder {
+  .founder {
     margin-top: 104px;
 
     .titleSlash {
+      padding: 0 24px;
 
-        padding: 0 24px;
-    
-        span {
-            background: #F1F1F1;
-            width: 40%;
-        }
+      span {
+        background: #f1f1f1;
+        width: 40%;
+      }
 
-        h4 {
-            min-width: 148px;
-            padding-right: 20px;
-            background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-            text-transform: uppercase;
-        }
-
+      h4 {
+        min-width: 148px;
+        padding-right: 20px;
+        background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+      }
     }
 
     .should_Flex {
-        display: flex;
-        flex-direction: column-reverse;
+      display: flex;
+      flex-direction: column-reverse;
 
-        .imageWrapper {
-            margin-bottom: 32px;
-        }
+      .imageWrapper {
+        margin-bottom: 32px;
+      }
     }
 
-
-
     .contentWrapper {
-        & > p {
-            margin: 0;
-            margin-top: 32px;
+      & > p {
+        margin: 0;
+        margin-top: 32px;
+      }
+
+      .listingWrapper {
+        margin-top: 48px;
+        display: block;
+
+        div {
+          display: flex;
+          align-items: center;
+          margin-right: 40px;
+
+          p {
+            margin: 0 0 0 12px;
+          }
         }
-
-        .listingWrapper {
-            margin-top: 48px;
-            display: block;
-
-            div {
-                display: flex;
-                align-items: center;
-                margin-right: 40px;
-
-                p {
-                    margin: 0 0 0 12px;
-                }
-            }
-        }
+      }
     }
 
     .afiliation {
-        background: #0C0D10;
-        padding: 24px 0;
-        margin-top: 0;
-        text-align: center;
-        color: #d0d0d0;
+      background: #0c0d10;
+      padding: 24px 0;
+      margin-top: 0;
+      text-align: center;
+      color: #d0d0d0;
 
-        & > div {
-            margin: auto;
-            display: flex;
-            width: auto;
-            justify-content: space-between;
-            overflow-x: scroll;
+      & > div {
+        margin: auto;
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        overflow-x: scroll;
 
-            img {
-                opacity: 0.3;
-                margin-top: 24px;
-            }
+        img {
+          opacity: 0.3;
+          margin-top: 24px;
         }
+      }
     }
-    
-   }
+  }
 
-   .joinSegsalerty {
+  .joinSegsalerty {
     h5 {
-        display: none;
+      display: none;
     }
-   }
+  }
 
-   .contactUs_Section {
+  .contactUs_Section {
     height: auto;
-    background: #F1F1F1;
+    background: #f1f1f1;
     color: #000;
     padding: 0;
     padding: 40px 24px;
     margin-top: 64px;
 
     .titleSlash {
-        h4 {
-            // min-width: 300px;
-            padding-right: 20px;
-        }
+      h4 {
+        // min-width: 300px;
+        padding-right: 20px;
+      }
 
-        span {
-            width: 30%;
-        }
+      span {
+        width: 30%;
+      }
     }
 
     & > div {
-        // margin: 80px 92px;
-        width: 100%;
+      // margin: 80px 92px;
+      width: 100%;
 
+      .contentWrapper {
+        display: block;
+        // margin-left: auto;
+        margin-top: 32px;
+        max-width: unset;
 
-        .contentWrapper {
+        .labelGrp {
+          display: none;
+        }
+
+        .inputGrp {
+          display: block;
+          width: auto;
+
+          h3 {
+            font-family: "Mona-Sans-Light";
+            font-size: 18px;
+          }
+
+          div {
+            margin-bottom: 32px;
+            display: flex;
+
+            input[type="text"],
+            textarea {
+              flex: 1;
+              background: #e4e4e7;
+              border: 1px solid #a5acaf;
+              color: #373737;
+              padding: 1rem;
+              margin-left: auto;
+              width: 100%;
+            }
+
+            textarea {
+              height: 164px;
+            }
+          }
+
+          button {
+            background: #217960;
+            color: #ffffff;
+            padding: 1rem 1.5rem;
             display: block;
-            // margin-left: auto;
-            margin-top: 32px;
-            max-width: unset;
-
-            .labelGrp {
-                display: none;
-            }
-
-            .inputGrp {
-                display: block;
-                width: auto;
-
-                h3 {
-                    font-family: 'Mona-Sans-Light';
-                    font-size: 18px;
-                }
-
-                div {
-                    margin-bottom: 32px;
-                    display: flex;
-
-                    input[type="text"], textarea {
-                        flex: 1;
-                        background: #E4E4E7;
-                        border: 1px solid #A5ACAF;
-                        color: #373737;
-                        padding: 1rem;
-                        margin-left: auto;
-                        width: 100%;
-                    }
-
-                    textarea {
-                        height: 164px;
-                    }
-                }
-                
-                    button {
-                      background: #217960;
-                      color: #FFFFFF;
-                      padding: 1rem 1.5rem;
-                      display: block;
-                      margin-left: auto;
-                    }
-            }
-
-            } 
-    } 
-}
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .aboutUsWrapper {
+  .aboutUsWrapper {
+    .titleSlash {
+      display: flex;
+      align-items: center;
+      justify-content: unset;
+
+      span {
+        content: "";
+        top: 50%;
+        height: 2px;
+        width: 100%;
+        background: #000;
+      }
+
+      h4 {
+        min-width: 264px;
+        padding-right: 20px;
+      }
+    }
+
+    .client_Section {
+      height: 70vh;
+      padding: 0;
+      margin: 0;
+      background: linear-gradient(
+          228.34deg,
+          rgba(0, 0, 0, 0) 39.29%,
+          rgba(0, 0, 0, 0.8) 72.21%
+        ),
+        url("../../images/aboutUsPage/talentMission.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      .contentWrapper {
+        padding: 0 0 40px 40px;
+        text-align: left;
+
+        & > p {
+          margin-bottom: 24px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .aboutUs_Section {
+      height: auto;
+      background: #f1f1f1;
+      color: #000;
+      padding: 80px 40px;
+
+      & > div {
+        .contentWrapper {
+          margin-left: auto;
+          margin-top: 32px;
+
+          h5 {
+            font-size: 24px;
+            line-height: 140%;
+          }
+
+          p {
+            color: #000;
+          }
+
+          a.secondaryButton {
+            background: #e4e4e7;
+            color: #020204;
+          }
+        }
+      }
+
+      & > div:last-child {
+        margin-top: 132px;
 
         .titleSlash {
+          span {
+            width: 100%;
+          }
+
+          h4 {
+            min-width: 414px;
+          }
+        }
+      }
+    }
+
+    .whatWeDoSection {
+      .imageWrapper {
+        display: flex;
+      }
+
+      .listingWrapper {
+        & > div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 32px;
+
+          svg {
+            background: #0c0d10;
+            border: 1px solid #231f20;
+            padding: 8px;
+            margin-right: 12px;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .vision {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .contentWrapper {
+          width: 48%;
+
+          .value {
+            .listingWrapper {
+              display: block;
+              margin-top: 24px;
+
+              & > div {
+                margin-right: 24px;
+              }
+            }
+          }
+
+          .ratings {
+            & > div {
+              display: flex;
+              margin-top: 24px;
+
+              svg {
+                margin-right: 8px;
+              }
+
+              p {
+                margin: 0;
+                display: inline;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .founder {
+      margin-top: 140px;
+
+      .titleSlash {
+        padding: 0 80px;
+
+        span {
+          background: #f1f1f1;
+          width: 100%;
+        }
+
+        h4 {
+          min-width: 264px;
+          padding-right: 20px;
+          background: linear-gradient(90deg, #00dc82 0%, #36e4da 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          text-transform: uppercase;
+        }
+      }
+
+      .should_Flex {
+        flex-direction: row;
+      }
+
+      .contentWrapper {
+        & > p {
+          margin: 0;
+          margin-top: 32px;
+        }
+
+        .listingWrapper {
+          margin-top: 48px;
+          display: flex;
+
+          div {
             display: flex;
             align-items: center;
-            justify-content: unset;
-        
-            span {
-                content: '';
-                top: 50%;
-                height: 2px;
-                width: 100%;
-                background: #000;
-            }
-    
-            h4 {
-                min-width: 264px;
-                padding-right: 20px;
-            }
-    
-        }
-        
-        .client_Section {
-            height: 70vh;
-            padding: 0;
-            margin: 0;
-            background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-    
-            .contentWrapper {
-                padding: 0 0 40px 40px;
-                text-align: left;
-    
-                & > p {
-                    margin-bottom: 24px;
-                    font-size: 24px;
-                }
-            }
-    
-        }
-    
-        .aboutUs_Section {
-            height: auto;
-            background: #F1F1F1;
-            color: #000;
-            padding: 80px 40px;
-    
-            & > div {
-                .contentWrapper {
-                margin-left: auto;
-                margin-top: 32px;
-    
-                    h5 {
-                        font-size: 24px;
-                        line-height: 140%;
-                    }
-    
-                    p {
-                        color: #000;
-                    }
-                    
-                    a.secondaryButton {
-                        background: #E4E4E7;
-                        color: #020204;
-                    }
-                } 
-            }
-    
-            & > div:last-child {
-                margin-top: 132px;
-    
-                .titleSlash {
-    
-                    span {
-                        width: 100%;
-                    }
-    
-                    h4 {
-                        min-width: 414px;
-                    }
-    
-                }
-            }    
-        }
-    
-        .whatWeDoSection {
+            margin-right: 40px;
 
-            .imageWrapper {
-                display: flex;
+            p {
+              margin: 0 0 0 12px;
             }
+          }
+        }
+      }
 
-            .listingWrapper {
-                & > div {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 32px;
-    
-                    svg {
-                        background: #0C0D10;
-                        border: 1px solid #231F20;
-                        padding: 8px;
-                        margin-right: 12px;
-                    }
-    
-                    p {
-                        margin: 0;
-                    }
-                }
-            }
-    
-            .vision {
-                display: flex;
-                flex-direction: row-reverse;
-    
-                .contentWrapper {
-                    width: 48%;
-    
-                    .value {
-    
-                        .listingWrapper {
-                            display: block;
-                            margin-top: 24px;
-        
-                            & > div {
-                                margin-right: 24px;
-                            }
-                        }
-                    }
-    
-                    .ratings {
-                        & > div {
-                            display: flex;
-                            margin-top: 24px;
-    
-                            svg {
-                                margin-right: 8px;
-                            }
-    
-                            p {
-                                margin: 0;
-                                display: inline;
-                                margin-right: 8px;
-                            }
-                        }
-                    }
+      .afiliation {
+        background: #0c0d10;
+        padding: 24px 0;
+        margin-top: 80px;
+        text-align: center;
+        color: #d0d0d0;
 
-                }
-
-            }
-       }
-    
-       .founder {
-        margin-top: 140px;
-    
-        .titleSlash {
-    
-            padding: 0 80px;
-        
-            span {
-                background: #F1F1F1;
-                width: 100%;
-            }
-    
-            h4 {
-                min-width: 264px;
-                padding-right: 20px;
-                background: linear-gradient(90deg, #00DC82 0%, #36E4DA 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
-                text-transform: uppercase;
-            }
-    
-        }
-
-        .should_Flex {
-            flex-direction: row;
-        }
-    
-        .contentWrapper {
-            & > p {
-                margin: 0;
-                margin-top: 32px;
-            }
-    
-            .listingWrapper {
-                margin-top: 48px;
-                display: flex;
-    
-                div {
-                    display: flex;
-                    align-items: center;
-                    margin-right: 40px;
-    
-                    p {
-                        margin: 0 0 0 12px;
-                    }
-                }
-            }
-        }
-    
-        .afiliation {
-            background: #0C0D10;
-            padding: 24px 0;
-            margin-top: 80px;
-            text-align: center;
-            color: #d0d0d0;
-    
-            & > div {
-                margin: auto;
-                display: flex;
-                width: 70%;
-                justify-content: space-between;
-    
-                img {
-                    opacity: 0.3;
-                    margin-top: 24px;
-                }
-            }
-        }
-        
-       }
-    
-       .joinSegsalerty {
-        h5 {
-            display: none;
-        }
-       }
-    
-       .contactUs_Section {
-        height: auto;
-        background: #F1F1F1;
-        color: #000;
-        padding: 0;
-        padding: 80px 40px;
-    
-        margin-top: 148px;
-    
-        .titleSlash {
-            h4 {
-                min-width: 320px;
-                padding-right: 20px;
-            }
-
-            span {
-                width: 80%;
-            }
-        }
-    
         & > div {
-            // margin: 80px 92px;
-            width: 100%;
-    
-    
-            .contentWrapper {
-                display: flex;
-                // margin-left: auto;
-                margin-top: 32px;
-                max-width: unset;
-                justify-content: space-between;
-    
-                .labelGrp {
-                    width: 50%;
-                    display: block;
-    
-                    & > div {
-                        margin-bottom: 52px;
-                    }
-                    
-                    h3 {
-                        font-family: 'Mona-Sans-BoldWide';
-                        font-size: 18px;
-                        line-height: 130%;
-                        letter-spacing: 0.02em;
-                        text-transform: uppercase;
-                    }
-    
-                    span {
-                        display: block;
-                        margin-bottom: 8px;
-                    }
-                }
-    
-                .inputGrp {
-    
-                    width: 50%;
-    
-                    h3 {
-                        font-family: 'Mona-Sans-Light';
-                        font-size: 18px;
-                    }
-    
-                    div {
-                        margin-bottom: 32px;
-                        display: flex;
-                        // flex-direction: column;
-                        // flex-wrap: wrap;
-    
-                        input[type="text"], textarea {
-                            flex: 1;
-                            background: #E4E4E7;
-                            border: 1px solid #A5ACAF;
-                            color: #373737;
-                            padding: 1rem;
-                            margin-left: auto;
-                        }
-    
-                        textarea {
-                            height: 164px;
-                        }
-                    }
-                    
-                        button {
-                          background: #217960;
-                          color: #FFFFFF;
-                          padding: 1rem 1.5rem;
-                          display: block;
-                          margin-left: auto;
-                        }
-                }
-    
-                } 
-        } 
+          margin: auto;
+          display: flex;
+          width: 70%;
+          justify-content: space-between;
+
+          img {
+            opacity: 0.3;
+            margin-top: 24px;
+          }
+        }
+      }
     }
+
+    .joinSegsalerty {
+      h5 {
+        display: none;
+      }
     }
+
+    .contactUs_Section {
+      height: auto;
+      background: #f1f1f1;
+      color: #000;
+      padding: 0;
+      padding: 80px 40px;
+
+      margin-top: 148px;
+
+      .titleSlash {
+        h4 {
+          min-width: 320px;
+          padding-right: 20px;
+        }
+
+        span {
+          width: 80%;
+        }
+      }
+
+      & > div {
+        // margin: 80px 92px;
+        width: 100%;
+
+        .contentWrapper {
+          display: flex;
+          // margin-left: auto;
+          margin-top: 32px;
+          max-width: unset;
+          justify-content: space-between;
+
+          .labelGrp {
+            width: 50%;
+            display: block;
+
+            & > div {
+              margin-bottom: 52px;
+            }
+
+            h3 {
+              font-family: "Mona-Sans-BoldWide";
+              font-size: 18px;
+              line-height: 130%;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+            }
+
+            span {
+              display: block;
+              margin-bottom: 8px;
+            }
+          }
+
+          .inputGrp {
+            width: 50%;
+
+            h3 {
+              font-family: "Mona-Sans-Light";
+              font-size: 18px;
+            }
+
+            div {
+              margin-bottom: 32px;
+              display: flex;
+              // flex-direction: column;
+              // flex-wrap: wrap;
+
+              input[type="text"],
+              textarea {
+                flex: 1;
+                background: #e4e4e7;
+                border: 1px solid #a5acaf;
+                color: #373737;
+                padding: 1rem;
+                margin-left: auto;
+              }
+
+              textarea {
+                height: 164px;
+              }
+            }
+
+            button {
+              background: #217960;
+              color: #ffffff;
+              padding: 1rem 1.5rem;
+              display: block;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-    .aboutUsWrapper {
-        .titleSlash {
-        
-            span {
-                top: 50%;
-                height: 2px;
-                width: 100%;
-            }
-    
-            h4 {
-                min-width: 264px;
-                padding-right: 20px;
-            }
-    
-        }
+  .aboutUsWrapper {
+    .titleSlash {
+      span {
+        top: 50%;
+        height: 2px;
+        width: 100%;
+      }
 
-        .client_Section {
-            height: 86vh;
-            background: linear-gradient(228.34deg, rgba(0, 0, 0, 0) 39.29%, rgba(0, 0, 0, 0.8) 72.21%), url('../../images/aboutUsPage/talentMission.png');
-    
-            .contentWrapper {
-                padding: 0 0 40px 80px;
-    
-                & > p {
-                    margin-bottom: 24px;
-                    font-size: 24px;
-                }
-            }
-    
-        }
-
-        .aboutUs_Section {
-            padding: 104px 80px;  
-        }
-
-        .whatWeDoSection {
-            .vision {
-                .contentWrapper {
-                    .value {
-                       .listingWrapper {
-                        display: flex;
-                        margin-top: 24px;
-                       } 
-                    }
-                }
-            }
-        }
-
-        .contactUs_Section {
-            padding: 104px 80px;
-            margin-top: 148px;
-        }
-
+      h4 {
+        min-width: 264px;
+        padding-right: 20px;
+      }
     }
+
+    .client_Section {
+      height: 86vh;
+      max-height: 900px;
+      background: linear-gradient(
+          228.34deg,
+          rgba(0, 0, 0, 0) 39.29%,
+          rgba(0, 0, 0, 0.8) 72.21%
+        ),
+        url("../../images/aboutUsPage/talentMission.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .contentWrapper {
+        padding: 0 0 40px 80px;
+
+        & > p {
+          margin-bottom: 24px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .aboutUs_Section {
+      padding: 104px 80px;
+    }
+
+    .whatWeDoSection {
+      .vision {
+        .contentWrapper {
+          .value {
+            .listingWrapper {
+              display: flex;
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .contactUs_Section {
+      padding: 104px 80px;
+      margin-top: 148px;
+    }
+  }
 }

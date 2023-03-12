@@ -1,29 +1,37 @@
-// import { HashLink } from "react-router-hash-link";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.scss";
 import headerLogo from "../../images/brandAssets/logoHeader.svg";
 
-let menu = (
-  <svg
-    width="20"
-    height="14"
-    viewBox="0 0 20 14"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect width="20" height="2" rx="1" fill="#D9D9D9" />
-    <rect y="6" width="20" height="2" rx="1" fill="#D9D9D9" />
-    <rect y="12" width="20" height="2" rx="1" fill="#D9D9D9" />
-  </svg>
-);
-
 const Header = ({ flip, menuFlip, reset }) => {
+  const routes = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "STS",
+      path: "/sts",
+    },
+    {
+      name: "Hire Us",
+      path: "/hire-us",
+    },
+    {
+      name: "Events",
+      path: "/events",
+    },
+    {
+      name: "About Us",
+      path: "/about-us",
+    },
+  ];
+
   return (
     <header className="header desktopMaxWidth">
       <div className="logo">
-        <Link onClick={reset} to="/">
+        <NavLink onClick={reset} to="/">
           <img src={headerLogo} alt="" />
-        </Link>
+        </NavLink>
       </div>
 
       <nav
@@ -34,37 +42,18 @@ const Header = ({ flip, menuFlip, reset }) => {
         }
       >
         <ul>
-          <li>
-            <Link onClick={reset} to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link onClick={reset} to="/sts">
-              STS
-            </Link>
-          </li>
-          {/* <li><Link to="#">Insights</Link></li> */}
-          <li>
-            <Link onClick={reset} to="/hireUs">
-              Hire Us
-            </Link>
-          </li>
-          <li>
-            <Link onClick={reset} to="/events">
-              Events
-            </Link>
-          </li>
-          <li>
-            <Link onClick={reset} to="/aboutUs">
-              About Us
-            </Link>
-          </li>
+          {routes.map((item, index) => (
+            <li key={index}>
+              <NavLink onClick={reset} to={item.path}>
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
 
-        <Link onClick={reset} to="/register">
+        <NavLink onClick={reset} to="/register">
           Donate
-        </Link>
+        </NavLink>
       </nav>
 
       <div onClick={menuFlip} className="menu">

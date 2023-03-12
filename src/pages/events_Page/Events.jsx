@@ -11,7 +11,7 @@ import testImg from "../../images/eventPage/testimonierImg.png";
 
 const Events = () => {
   return (
-    <div className="eventsWrapper ">
+    <div className="eventsWrapper desktopMaxWidth">
       <section className="talentHunt_Section">
         <div className="contentWrapper">
           <h4> Upcoming: Segsalerty talent hunt </h4>
