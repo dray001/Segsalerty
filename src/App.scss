@@ -74,6 +74,8 @@ form {
   }
 }
 
+
+
 main {
   section {
     padding: 0 $hpvMobile;
@@ -172,6 +174,44 @@ main {
       }
 
       .imageWrapper {
+        border: 1px solid #01DD82;
+        position: relative;
+
+        .edgbeIcon {
+          width: 16px;
+          height: 16px;
+          background-image: url('../src/images/brandAssets/egbe.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5px;
+          position: absolute;
+          top: -2px;
+          left: -2px;
+
+          &:nth-of-type(2) {
+            right: -8px;
+            left: unset;
+            // top: 0;
+            transform: rotate(90deg);
+          }
+
+          &:nth-of-type(3) {
+            // right: -8px;
+            left: -2px;
+            bottom: -2px;
+            top: unset;
+            transform: rotate(-90deg);
+          }
+
+          &:nth-of-type(4) {
+            right: -8px;
+            left: unset;
+            bottom: -2px;
+            top: unset;
+            transform: rotate(180deg);
+          }
+        }
+
         img {
           width: 100%;
         }

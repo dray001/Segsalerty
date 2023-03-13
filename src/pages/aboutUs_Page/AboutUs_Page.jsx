@@ -12,6 +12,13 @@ import visionStatementImg from "../../images/aboutUsPage/visionStatement.png";
 import founderImg from "../../images/aboutUsPage/founder.png";
 import andelaImg from "../../images/brandAssets/andelaLogo.png";
 
+let edgbes = <>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            </>
+
 let establish = (
   <svg
     width="32"
@@ -441,6 +448,7 @@ const AboutUs = () => {
           </div>
 
           <div className="imageWrapper">
+            {edgbes}
             <img src={whatWeDoImg} alt="img" />
           </div>
         </div>
@@ -486,6 +494,7 @@ const AboutUs = () => {
           </div>
 
           <div className="imageWrapper">
+            {edgbes}
             <img src={visionStatementImg} alt="img" />
           </div>
         </div>
@@ -534,6 +543,7 @@ const AboutUs = () => {
           </div>
 
           <div className="imageWrapper">
+            {edgbes}
             <img src={founderImg} alt="img" />
           </div>
         </div>

@@ -42,6 +42,13 @@ let icon = (
   </svg>
 );
 
+let edgbes = <>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            </>
+
 let list = () => {
   const logos = [];
 
@@ -135,6 +142,7 @@ const HomePage = () => {
           </div>
 
           <div className="imageWrapper">
+            {edgbes}
             <div className="imageWrappeContent">
               <div>
                 {icon}
@@ -174,6 +182,7 @@ const HomePage = () => {
           </div>
 
           <div className="imageWrapper">
+            {edgbes}
             <div className="imageWrappeContent">
               <div>
                 {icon}

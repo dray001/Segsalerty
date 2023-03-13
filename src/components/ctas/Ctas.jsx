@@ -4,6 +4,13 @@ import "./ctas.scss";
 import be_a_clientImg from "../../images/become_A_Client.png";
 import join_our_community from "../../images/join_our_community.png";
 
+let edgbes = <>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            <span className="edgbeIcon"></span>
+            </>
+
 const Ctas = () => {
   return (
     <section className="joinSegsalerty section_with_subSections desktopMaxWidth">
@@ -26,6 +33,7 @@ const Ctas = () => {
         </div>
 
         <div className="imageWrapper">
+          {edgbes}
           <img src={be_a_clientImg} alt="" />
         </div>
       </div>
@@ -52,6 +60,7 @@ const Ctas = () => {
         </div>
 
         <div className="imageWrapper">
+          {edgbes}
           <img src={join_our_community} alt="" />
         </div>
       </div>

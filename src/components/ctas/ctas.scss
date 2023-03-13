@@ -1,4 +1,34 @@
 .joinSegsalerty {
+    
+    .be_a_client.should_Flex, .join-community.should_Flex {
+            .imageWrapper {
+                border: none;
+
+                .edgbeIcon {
+          
+                    &:nth-of-type(3) {
+                      // right: -8px;
+                      left: -2px;
+                      bottom: 2px;
+                      top: unset;
+                      transform: rotate(-90deg);
+                    }
+          
+                    &:nth-of-type(4) {
+                      right: -8px;
+                      left: unset;
+                      bottom: 2px;
+                      top: unset;
+                      transform: rotate(180deg);
+                    }
+                  }
+
+                img {
+                    border: 1px solid #01DD82;
+                }
+            }
+        } 
+
     .join-community {
         flex-direction: row-reverse;
     }
